@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full overflow-x-clip">
     <NuxtPage></NuxtPage>
     <A-Menu v-if="menuState && !$route.fullPath.includes('products')"></A-Menu>
   </div>

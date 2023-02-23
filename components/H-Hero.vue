@@ -32,7 +32,7 @@
       class="flex flex-col lg:flex-row w-full justify-between items-center mt-36 lg:mt-0 px-10 lg:px-20 pb-10 sm:pb-20 lg:pb-10"
     >
       <div class="w-full">
-        <h3 class="text-4xl sm:text-8xl lg:text-9xl">
+        <h3 class="text-4xl sm:text-8xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
           <span class="block font-light">Cleaning</span>
           <span class="block font-semibold">Made Easy</span>
         </h3>
@@ -45,7 +45,7 @@
 
       <div
         @click="menuState = true"
-        class="cursor-pointer flex w-full items-center mt-14 lg:mt-0 lg:justify-end pr-10"
+        class="cursor-pointer flex w-full items-center mt-14 lg:mt-0 lg:justify-end pr-10 hero-shop-now"
       >
         <span class="text-lg lg:text-2xl tracking-[0.8rem] lg:tracking-[0.9rem]"
           >Shop Now</span
@@ -67,3 +67,10 @@
 <script setup>
 const menuState = useState("menuState");
 </script>
+
+<style scoped>
+.hero-shop-now:hover span img {
+  transform: translateX(+30%);
+  transition-duration: 1000ms;
+}
+</style>

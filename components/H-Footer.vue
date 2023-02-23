@@ -28,15 +28,15 @@
       </h5>
 
       <div class="flex justify-between">
-        <button class="flex mt-10 text-white">
+        <a href="https://maps.app.goo.gl/vLhdDmhajnQVSmRb9" class="flex mt-10 text-white footer-arrow-parent">
           <span class="text-2xl tracking-[0.6rem]">Get Direction</span>
           <img src="@/assets/arrow-right.svg" class="ml-5" alt="" />
-        </button>
+        </a>
 
         <div class="flex items-center">
           <NuxtLink
             to="/shipping-and-cancellation"
-            class="flex mt-10 text-neutral-500"
+            class="flex mt-10 text-neutral-500 footer-arrow-parent"
           >
             <span class="text-xl">Shipping & Cancellation</span>
             <img src="@/assets/arrow-right.svg" class="ml-5" alt="" />
@@ -44,7 +44,7 @@
 
           <NuxtLink
             to="/terms-of-service"
-            class="flex mt-10 ml-20 text-neutral-500"
+            class="flex mt-10 ml-20 text-neutral-500 footer-arrow-parent"
           >
             <span class="text-xl">Terms of Service</span>
             <img src="@/assets/arrow-right.svg" class="ml-5" alt="" />
@@ -54,7 +54,9 @@
 
       <div class="flex text-lg mt-40">
         <span class="text-neutral-500">©2023-Invac</span>
-        <NuxtLink to="/privacy-policy" class="text-neutral-500 ml-20">Privacy Policy</NuxtLink>
+        <NuxtLink to="/privacy-policy" class="text-neutral-500 ml-20"
+          >Privacy Policy</NuxtLink
+        >
       </div>
     </div>
 
@@ -77,10 +79,10 @@
         <span class="block font-semibold mt-5">Hyderabad-500033.</span>
       </h5>
 
-      <button class="flex mt-10 text-white items-center">
+      <a href="https://maps.app.goo.gl/vLhdDmhajnQVSmRb9" class="flex mt-10 text-white items-center footer-arrow-parent">
         <span class="text-lg tracking-[0.6rem]">Get Direction</span>
         <img src="@/assets/arrow-right.svg" class="ml-5 h-5" alt="" />
-      </button>
+      </a>
 
       <a
         href="mailto:sales@invac.in"
@@ -100,7 +102,9 @@
 
       <div class="w-full justify-between flex text-lg mt-14">
         <NuxtLink to="/" class="text-neutral-500">©2023-Invac</NuxtLink>
-        <NuxtLink to="/privacy-policy" class="text-neutral-500">Privacy Policy</NuxtLink>
+        <NuxtLink to="/privacy-policy" class="text-neutral-500"
+          >Privacy Policy</NuxtLink
+        >
       </div>
     </div>
   </section>
@@ -109,3 +113,10 @@
 <script setup>
 //TODO connect the links to proper routes
 </script>
+
+<style scoped>
+.footer-arrow-parent:hover img {
+  transform: translateX(+30%);
+  transition-duration: 1000ms;
+}
+</style>

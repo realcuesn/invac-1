@@ -13,7 +13,7 @@
       </h4>
 
       <button @click="menuState = true"
-        class="flex w-fit items-center p-4 px-10 lg:px-16 justify-center rounded-2xl border-[#FF7900] border-2 mt-10 lg:mt-20"
+        class="flex w-fit items-center p-4 px-10 lg:px-16 justify-center rounded-2xl border-[#FF7900] border-2 mt-10 lg:mt-20 family-shop-now"
       >
         <span class="text-lg lg:text-xl tracking-[0.6rem]">Shop Now</span>
         <img
@@ -29,3 +29,11 @@
 <script setup>
 const menuState = useState("menuState");
 </script>
+
+
+<style scoped>
+.family-shop-now:hover img {
+  transform: translateX(+30%);
+  transition-duration: 1000ms;
+}
+</style>

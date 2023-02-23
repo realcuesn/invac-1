@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 w-full flex flex-col">
+  <div class="fixed top-0 w-full flex lg:h-screen flex-col" ref="menuWrapper">
     <div
       class="h-screen flex flex-col lg:h-fit lg:block w-full lg:min-h-fit bg-white pb-10 lg:pb-20"
     >
@@ -17,6 +17,7 @@
           </div>
 
           <NuxtLink
+            @click="onMenuClose"
             to="/demo"
             class="text-xl tracking-[0.8rem] ml-20 p-4 rounded-xl px-11 border-2 border-[#FF7900]"
           >
@@ -35,7 +36,7 @@
 
       <div
         v-if="homeMenuState"
-        class="px-10 justify-between h-full lg:px-20 flex flex-col lg:flex-row items-end mt-14"
+        class="px-10 justify-between h-full lg:h-fit lg:px-20 flex flex-col lg:flex-row items-end mt-14"
       >
         <div
           class="lg:h-72 xl:h-80 2xl:h-96 flex flex-row w-full items-center lg:w-fit lg:flex-col lg:items-start lg:justify-between min-w-fit"
@@ -68,16 +69,19 @@
           </h4>
 
           <NuxtLink
+            @mouseover="onTyphoonHover"
+            @mouseleave="onTyphoonLeave"
             to="/products/typhoon-d2"
             class="w-[100%] h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-96 flex justify-evenly items-center relative"
           >
             <img
               src="@/assets/typhoon.svg"
-              class="h-7 sm:h-16 sm:mt-40 mt-24 lg:h-7 lg:mt-28 xl:h-10 xl:mt-28 2xl:h-16 2xl:mt-48 z-10"
+              class="h-7 sm:h-16 sm:mt-40 mt-24 lg:h-7 lg:mt-28 xl:h-10 xl:mt-28 2xl:h-11 2xl:mt-48 z-10"
               alt=""
             />
 
             <img
+              ref="typhoonRef"
               src="@/assets/product-1.png"
               class="h-40 sm:h-72 lg:h-52 xl:h-60 2xl:h-80 z-10"
               alt=""
@@ -89,16 +93,19 @@
           </NuxtLink>
 
           <NuxtLink
+            @mouseover="onTechnoHover"
+            @mouseleave="onTechnoLeave"
             to="/products/techno-plus-158"
             class="w-[100%] h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-96 flex justify-evenly items-center relative"
           >
             <img
               src="@/assets/techno-plus.svg"
-              class="h-9 sm:h-20 sm:mt-40 mt-24 lg:h-7 lg:mt-28 xl:h-10 xl:mt-28 2xl:h-16 2xl:mt-48 z-10"
+              class="h-9 sm:h-20 sm:mt-40 mt-24 lg:h-7 lg:mt-28 xl:h-10 xl:mt-28 2xl:h-12 2xl:mt-48 z-10"
               alt=""
             />
 
             <img
+              ref="technoRef"
               src="@/assets/product-3.png"
               class="h-40 sm:h-72 lg:h-52 xl:h-60 2xl:h-80 z-10"
               alt=""
@@ -113,13 +120,13 @@
 
       <div
         v-else
-        class="px-10 justify-between h-full lg:px-20 flex flex-col lg:flex-row items-end mt-14"
+        class="px-10 justify-between h-full lg:h-fit lg:px-20 flex flex-col lg:flex-row items-end mt-14"
       >
         <div
           class="lg:h-72 xl:h-80 2xl:h-96 flex flex-row w-full items-center lg:w-fit lg:flex-col lg:items-start lg:justify-between min-w-fit"
         >
           <img
-            @click="menuState = false"
+            @click="onMenuClose"
             src="@/assets/arrow-right.svg"
             class="h-5 lg:h-7 rotate-180 cursor-pointer"
             alt=""
@@ -149,7 +156,10 @@
 
           <div
             @click="homeMenuState = true"
-            class="w-[100%] rounded-2xl h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-72 relative"
+            ref="homesRef"
+            @mouseover="onHomeHover"
+            @mouseleave="onHomeLeave"
+            class="w-[100%] rounded-2xl h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-72 relative cursor-pointer"
           >
             <img
               src="@/assets/home-thumbnail.png"
@@ -158,14 +168,17 @@
             />
 
             <p
-              class="absolute left-5 top-5 text-2xl sm:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-black font-semibold"
+              class="absolute left-10 top-10 text-2xl sm:text-4xl lg:text-2xl xl:text-xl 2xl:text-2xl text-black font-semibold"
             >
               For Homes
             </p>
           </div>
 
           <div
-            class="w-[100%] rounded-2xl h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-72 relative"
+            ref="industrialRef"
+            @mouseover="onIndustrailHover"
+            @mouseleave="onIndustrialLeave"
+            class="w-[100%] rounded-2xl h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-72 relative cursor-not-allowed"
           >
             <img
               src="@/assets/industrial-thumbnail.png"
@@ -174,12 +187,12 @@
             />
 
             <p
-              class="absolute left-5 top-5 text-2xl sm:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-white font-semibold"
+              class="absolute left-10 top-10 text-xl sm:text-4xl lg:text-2xl xl:text-xl 2xl:text-2xl text-white font-semibold"
             >
               Industrial
             </p>
             <p
-              class="absolute bottom-5 left-5 text-sm sm:text-base lg:text-base text-white tracking-[0.6rem]"
+              class="absolute bottom-10 left-10 text-sm sm:text-base lg:text-sm text-white tracking-[0.6rem]"
             >
               Coming Soon
             </p>
@@ -187,10 +200,120 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="h-0 w-0 lg:h-full lg:w-full lg:bg-black opacity-0"
+      ref="darkWrapper"
+      @click="onMenuClose"
+    ></div>
   </div>
 </template>
 
 <script setup>
+import gsap from "gsap";
 const menuState = useState("menuState");
 const homeMenuState = ref(false);
+
+const menuWrapper = ref(null);
+const darkWrapper = ref(null);
+const homesRef = ref(null);
+const industrialRef = ref(null);
+const typhoonRef = ref(null);
+const technoRef = ref(null);
+
+const onTyphoonHover = () => {
+  gsap.to(typhoonRef.value, {
+    y: "-10%",
+    duration: 0.5,
+  });
+};
+
+const onTyphoonLeave = () => {
+  gsap.to(typhoonRef.value, {
+    y: "0%",
+    duration: 0.5,
+  });
+};
+
+const onTechnoHover = () => {
+  gsap.to(technoRef.value, {
+    y: "-10%",
+    duration: 0.5,
+  });
+};
+
+const onTechnoLeave = () => {
+  gsap.to(technoRef.value, {
+    y: "0%",
+    duration: 0.5,
+  });
+};
+
+const onHomeHover = () => {
+  gsap.to(homesRef.value, {
+    y: "-10%",
+    duration: 0.5,
+  });
+};
+
+const onHomeLeave = () => {
+  gsap.to(homesRef.value, {
+    y: "0%",
+    duration: 0.5,
+  });
+};
+
+const onIndustrailHover = () => {
+  gsap.to(industrialRef.value, {
+    y: "-10%",
+    duration: 0.5,
+  });
+};
+
+const onIndustrialLeave = () => {
+  gsap.to(industrialRef.value, {
+    y: "0%",
+    duration: 0.5,
+  });
+};
+
+const onMenuClose = () => {
+  gsap.to(menuWrapper.value, {
+    y: "-100%",
+    duration: 0.5,
+  });
+
+  gsap.to(darkWrapper.value, {
+    opacity: 0,
+    duration: 0.1,
+  });
+
+  setTimeout(() => {
+    menuState.value = false;
+  }, 500);
+};
+
+onMounted(() => {
+  const mm = gsap.matchMedia();
+
+  mm.add("(min-width: 1024px)", () => {
+    gsap.from(menuWrapper.value, {
+      y: "-100%",
+      duration: 0.5,
+    });
+
+    gsap.to(darkWrapper.value, {
+      opacity: 0.5,
+      delay: 0.5,
+      duration: 0.5,
+    });
+  });
+
+  mm.add("(max-width: 1024px)", () => {
+    gsap.from(menuWrapper.value, {
+      x: "+100%",
+      duration: 0.5,
+    });
+  });
+});
 </script>
