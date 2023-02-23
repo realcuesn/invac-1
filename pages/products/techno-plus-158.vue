@@ -17,7 +17,7 @@
       </div>
 
       <div class="h-full w-full flex items-center justify-center">
-        <img src="@/assets/product-4.png" class="h-[28rem]" alt="" />
+        <img src="@/assets/product-3.png" class="h-[28rem]" alt="" />
       </div>
 
       <div class="w-full flex justify-between min-h-fit max-h-fit py-10">
@@ -90,23 +90,18 @@
             <img src="@/assets/selected.svg" class="h-6 w-6 opacity-0" alt="" />
           </NuxtLink>
 
-          <div class="flex ml-40 items-center">
-            <img
-              v-if="boosterState"
-              @click="boosterState = false"
-              src="@/assets/selected.svg"
-              class="h-6 w-6"
-              alt=""
-            />
+          <NuxtLink
+            to="/products/techno-plus-booster-158"
+            class="flex ml-40 items-center"
+          >
             <div
-              v-else
               @click="boosterState = true"
               class="h-7 w-7 rounded-md border border-white"
             ></div>
             <span class="text-white text-2xl font-semibold ml-5"
               >Add Booster</span
             >
-          </div>
+          </NuxtLink>
         </div>
       </div>
 
@@ -117,17 +112,22 @@
         sludge.
       </div>
 
-      <div
+      <NuxtLink
+        @click="selectedProduct = 2"
+        to="/demo"
         class="flex px-10 border-neutral-500 border rounded-2xl py-10 justify-between w-full"
       >
-        <span class="text-white text-2xl font-semibold"
+        <span
+          class="text-white lg:text-lg xl:text-xl 2xl:text-2xl font-semibold"
           >₹248,505.00 – ₹298,999.00</span
         >
         <div class="flex items-center justify-center text-white">
-          <span class="text-sm tracking-[0.5rem]">Get A quote</span>
+          <span class="lg:text-xs 2xl:text-sm tracking-[0.5rem]"
+            >Get A quote</span
+          >
           <img src="@/assets/arrow-right.svg" class="h-7 ml-2" alt="" />
         </div>
-      </div>
+      </NuxtLink>
 
       <p class="text-sm text-neutral-500">
         *This pricing is only for the Product. Installation and piping are
@@ -145,14 +145,18 @@
 
         <div>
           <NuxtLink to="/">
-            <img src="@/assets/x.svg" class="h-10 w-10 sm:h-14 sm:w-14" alt="" />
+            <img
+              src="@/assets/x.svg"
+              class="h-10 w-10 sm:h-14 sm:w-14"
+              alt=""
+            />
           </NuxtLink>
         </div>
       </div>
 
       <div class="w-full flex justify-between h-fit mt-20">
         <div class="w-full sm:flex sm:justify-center">
-          <img src="@/assets/product-4.png" class="h-80 sm:h-[28rem]" alt="" />
+          <img src="@/assets/product-3.png" class="h-80 sm:h-[28rem]" alt="" />
         </div>
 
         <div class="flex flex-col justify-between sm:gap-y-7 h-full">
@@ -205,7 +209,6 @@
           class="border-[#ff7900] border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
         >
           <span>158</span>
-
           <img src="@/assets/selected.svg" class="h-5 w-5" alt="" />
         </div>
 
@@ -226,17 +229,19 @@
         sludge.
       </p>
 
-      <h3 class="mt-14 text-white font-semibold text-xl text-end">
+      <h3 class="mt-14 text-white font-semibold text-xl text-left">
         ₹248,505.00 – ₹298,999.00
       </h3>
 
-      <div
+      <NuxtLink
+        @click="selectedProduct = 2"
+        to="/demo"
         class="w-full flex p-3 mt-10 border-neutral-500 border text-white rounded-xl justify-evenly sm:justify-center sm:gap-x-10 items-center text-sm tracking-[0.6rem]"
       >
         <span>Get A Quote</span>
 
         <img src="@/assets/arrow-right.svg" class="h-7" alt="" />
-      </div>
+      </NuxtLink>
 
       <p class="text-sm mt-14 text-neutral-500">
         *This pricing is only for the Product. Installation and piping are
@@ -249,6 +254,7 @@
 <script setup>
 const route = useRoute();
 const boosterState = ref(false);
+const selectedProduct = useState("selectedProduct");
 
 useHead({
   title: "Techno Plus 158",

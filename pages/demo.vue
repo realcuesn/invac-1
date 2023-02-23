@@ -28,6 +28,10 @@
             <span class="tracking-[0.8rem] text-xl block">Products</span>
             <img src="@/assets/chevron-down.svg" class="h-5 w-5" alt="" />
           </div>
+
+          <NuxtLink class="hidden lg:block" to="/">
+            <img src="@/assets/x.svg" class="h-10 w-10" alt="" />
+          </NuxtLink>
         </div>
 
         <div class="place-self-end w-full flex flex-col gap-y-14">
@@ -50,11 +54,20 @@
             <div
               class="lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black"
             >
-              <input
-                type="text"
-                placeholder="Model"
+              <select
+                ref="modelRef"
+                name="Model"
+                id="model"
                 class="w-full outline-none"
-              />
+              >
+                <option value="typhoon-d2">Typhoon D2</option>
+                <option value="typhoon-d3">Typhoon D3</option>
+                <option value="techno-plus-158">TechnoPlus 158</option>
+                <option value="techno-plus-158-booster">
+                  TechnoPlus 158 + Booster
+                </option>
+                <option value="techno-plus-258">TechnoPlus 258</option>
+              </select>
               <img src="@/assets/chevron-down.svg" class="h-10 w-10" alt="" />
             </div>
 
@@ -66,7 +79,6 @@
                 placeholder="Qty"
                 class="w-full outline-none"
               />
-              <img src="@/assets/chevron-down.svg" class="h-10 w-10" alt="" />
             </div>
           </div>
 
@@ -82,7 +94,24 @@
 
 <script setup>
 const menuState = useState("menuState");
-
+const selectedProduct = useState("selectedProduct");
+const modelRef = ref(null);
+onMounted(() => {
+  console.log(selectedProduct.value);
+  modelRef.value.value =
+    selectedProduct.value == 0
+      ? "typhoon-d2"
+      : selectedProduct.value == 1
+      ? "typhoon-d3"
+      : selectedProduct.value == 2
+      ? "techno-plus-158"
+      : selectedProduct.value == 3
+      ? "techno-plus-158-booster"
+      : selectedProduct.value == 4
+      ? "techno-plus-258"
+      : "typhoon-d2";
+  menuState.value = false;
+});
 useHead({
   title: "Book a Demo",
 });
@@ -94,3 +123,9 @@ definePageMeta({
   },
 });
 </script>
+
+<style scoped>
+select {
+  appearance: none;
+}
+</style>

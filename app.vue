@@ -12,6 +12,8 @@ import Lenis from "@studio-freight/lenis";
 gsap.registerPlugin(ScrollTrigger);
 
 const menuState = useState("menuState", () => false);
+const homeMenuState = useState("homeMenuState", () => false);
+const selectedProduct = useState("selectedProduct", () => 0);
 onMounted(() => {
   const lenis = new Lenis({
     duration: 1.2,

@@ -17,7 +17,7 @@
       </div>
 
       <div class="h-full w-full flex items-center justify-center">
-        <img src="@/assets/product-5.png" class="h-[28rem]" alt="" />
+        <img src="@/assets/product-4.png" class="h-[28rem]" alt="" />
       </div>
 
       <div class="w-full flex justify-between min-h-fit max-h-fit py-10">
@@ -73,22 +73,35 @@
       <div>
         <p class="text-neutral-500 text-2xl">Pick a model</p>
         <div class="flex mt-4 gap-x-8 items-center">
-          <NuxtLink
-            to="/products/techno-plus-158"
-            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-neutral-500 rounded-2xl"
+          <div
+            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-[#FF7900] rounded-2xl"
           >
             <span>158</span>
+
+            <img src="@/assets/selected.svg" class="h-6 w-6" alt="" />
+          </div>
+
+          <NuxtLink
+            to="/products/techno-plus-258"
+            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-neutral-500 rounded-2xl"
+          >
+            <span>258</span>
 
             <img src="@/assets/selected.svg" class="h-6 w-6 opacity-0" alt="" />
           </NuxtLink>
 
-          <div
-            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-[#FF7900] rounded-2xl"
+          <NuxtLink
+            to="/products/techno-plus-158"
+            class="flex ml-40 items-center"
           >
-            <span>258</span>
-
-            <img src="@/assets/selected.svg" class="h-6 w-6" alt="" />
-          </div>
+            <img
+              src="@/assets/selected.svg"
+              class="h-7 w-7"
+            />
+            <span class="text-white text-2xl font-semibold ml-5"
+              >Add Booster</span
+            >
+          </NuxtLink>
         </div>
       </div>
 
@@ -99,16 +112,18 @@
         sludge.
       </div>
 
-      <NuxtLink
+      <NuxtLink  @click="selectedProduct = 3"
         to="/demo"
-        @click="selectedProduct = 4"
         class="flex px-10 border-neutral-500 border rounded-2xl py-10 justify-between w-full"
       >
-        <span class="text-white text-2xl font-semibold"
+        <span
+          class="text-white lg:text-lg xl:text-xl 2xl:text-2xl font-semibold"
           >₹248,505.00 – ₹298,999.00</span
         >
         <div class="flex items-center justify-center text-white">
-          <span class="text-sm tracking-[0.5rem]">Get A quote</span>
+          <span class="lg:text-xs 2xl:text-sm tracking-[0.5rem]"
+            >Get A quote</span
+          >
           <img src="@/assets/arrow-right.svg" class="h-7 ml-2" alt="" />
         </div>
       </NuxtLink>
@@ -140,7 +155,7 @@
 
       <div class="w-full flex justify-between h-fit mt-20">
         <div class="w-full sm:flex sm:justify-center">
-          <img src="@/assets/product-5.png" class="h-80 sm:h-[28rem]" alt="" />
+          <img src="@/assets/product-4.png" class="h-80 sm:h-[28rem]" alt="" />
         </div>
 
         <div class="flex flex-col justify-between sm:gap-y-7 h-full">
@@ -168,7 +183,7 @@
 
           <div class="flex scale-75 sm:scale-100 flex-col items-center">
             <img
-              src="@/assets/fully-auto.svg"
+              src="@/assets/semi-auto.svg"
               class="h-24 w-24 border-black p-5 rounded-2xl border"
               alt=""
             />
@@ -189,22 +204,22 @@
     <div class="w-full px-10 pt-20 pb-10 bg-[#191919] lg:hidden">
       <h3 class="text-neutral-500 text-lg">Pick a model</h3>
       <div class="flex justify-start mt-4 gap-x-6">
-        <NuxtLink
-          to="/products/techno-plus-158"
-          class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
-        >
-          <span>158</span>
-
-          <img src="@/assets/selected.svg" class="h-5 w-5 opacity-0" alt="" />
-        </NuxtLink>
-
         <div
           class="border-[#ff7900] border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
         >
-          <span>258</span>
+          <span>158</span>
 
           <img src="@/assets/selected.svg" class="h-5 w-5" alt="" />
         </div>
+
+        <NuxtLink
+          to="/products/techno-plus-258"
+          class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
+        >
+          <span>258</span>
+
+          <img src="@/assets/selected.svg" class="h-5 w-5 opacity-0" alt="" />
+        </NuxtLink>
       </div>
 
       <p class="text-white mt-10 leading-6 text-lg">
@@ -218,8 +233,7 @@
         ₹248,505.00 – ₹298,999.00
       </h3>
 
-      <NuxtLink
-        @click="selectedProduct = 4"
+      <NuxtLink  @click="selectedProduct = 3"
         to="/demo"
         class="w-full flex p-3 mt-10 border-neutral-500 border text-white rounded-xl justify-evenly sm:justify-center sm:gap-x-10 items-center text-sm tracking-[0.6rem]"
       >
@@ -241,8 +255,9 @@ const route = useRoute();
 const boosterState = ref(false);
 const selectedProduct = useState("selectedProduct");
 useHead({
-  title: "Techno Plus 258",
+  title: "Techno Plus 158 + Booster",
 });
+
 onMounted(() => {
   console.log(route.path.includes("products"));
 });

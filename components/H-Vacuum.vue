@@ -4,7 +4,7 @@
       It's a great way to vacuum.
     </h2>
     <NuxtLink to="/demo"
-      class="text-xs lg:text-2xl mt-14 tracking-[0.6rem] p-3 px-7 lg:p-4 rounded-2xl lg:px-7 border-2 border-[#FF7900]"
+      class="text-xs lg:text-2xl mt-14 tracking-[0.6rem] p-3 px-7 lg:p-4 rounded-2xl lg:px-7 border-2 border-[#FF7900] pl-10 lg:pl-12"
     >
       Book A Demo
     </NuxtLink>
@@ -17,7 +17,7 @@
     <!-- first section  strats here-->
     <div ref="sectionOne" class="h-full lg:mb-32">
       <div
-        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw] shadow-2xl border-black rounded-2xl flex flex-col pb-0 lg:pb-[5vw]"
+        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw]  lg:shadow-md border-black rounded-2xl flex flex-col pb-0 lg:pb-[5vw]"
       >
         <img
           src="@/assets/powerful-suction.svg"
@@ -31,7 +31,7 @@
       </div>
 
       <div
-        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw] shadow-2xl border-black mt-3 lg:mt-10 rounded-2xl flex flex-col pb-0 lg:pb-[5vw]"
+        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw]  lg:shadow-md border-black mt-3 lg:mt-10 rounded-2xl flex flex-col pb-0 lg:pb-[5vw]"
       >
         <img
           src="@/assets/accessories.svg"
@@ -50,7 +50,7 @@
     <!-- second section starts here -->
     <div ref="sectionTwo" class="h-full mx-3 lg:mx-10">
       <div
-        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw] shadow-2xl border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
+        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw]  lg:shadow-md border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
       >
         <img
           src="@/assets/energy-effcient.svg"
@@ -66,7 +66,7 @@
       </div>
 
       <div
-        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw] shadow-2xl border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
+        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw]  lg:shadow-md border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
       >
         <img
           src="@/assets/wet-dry.svg"
@@ -85,14 +85,14 @@
     <div class="">
       <img
         src="@/assets/product-1.png"
-        class="min-h-[65vw] min-w-[35vw] h-[65vw] w-[30vw] lg:min-h-[70vh] lg:min-w-[40vh] lg:h-[70vh] lg:w-[40vh]"
+        class="min-h-[65vw] min-w-[35vw] h-[65vw] w-[30vw] object-cover lg:min-h-[70vh] lg:min-w-[40vh] lg:h-[70vh] lg:w-[40vh]"
         alt=""
       />
     </div>
     <!-- first section  strats here-->
     <div ref="sectionThree" class="h-full mx-3 lg:mx-10">
       <div
-        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw] shadow-2xl border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
+        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw]  lg:shadow-md border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
       >
         <img
           src="@/assets/simultaneous-use.svg"
@@ -108,7 +108,7 @@
       </div>
 
       <div
-        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw] shadow-2xl border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
+        class="min-w-[20vw] min-h-[35vw] w-[25vw] h-[15vw] lg:min-h-[15vw] lg:min-w-[12vw] lg:w-[12vw] lg:h-[15vw]  lg:shadow-md border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-[5vw]"
       >
         <img
           src="@/assets/zero-re-entry.svg"
@@ -128,7 +128,7 @@
     <!-- second section starts here -->
     <div ref="sectionFour" class="h-full lg:mb-32">
       <div
-        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw] shadow-2xl border-black rounded-2xl flex flex-col pb-0 lg:pb-[5vw]"
+        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw]  lg:shadow-md border-black rounded-2xl flex flex-col pb-0 lg:pb-[5vw]"
       >
         <img
           src="@/assets/energy-effcient.svg"
@@ -142,7 +142,7 @@
       </div>
 
       <div
-        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw] shadow-2xl border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-0 lg:pb-[5vw]"
+        class="w-[30vw] h-[42vw] min-w-[30vw] min-h-[42vw] lg:min-w-[15vw] lg:min-h-[20vw] lg:w-[15vw] lg:h-[20vw]  lg:shadow-md border-black rounded-2xl mt-3 lg:mt-10 flex flex-col pb-0 lg:pb-[5vw]"
       >
         <img
           src="@/assets/pan-india.svg"

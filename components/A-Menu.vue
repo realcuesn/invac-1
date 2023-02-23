@@ -11,7 +11,7 @@
         </NuxtLink>
 
         <div class="hidden lg:flex items-center">
-          <div class="flex items-center">
+          <div @click="onMenuClose" class="flex items-center">
             <span class="tracking-[0.8rem] text-xl block">Products</span>
             <img src="@/assets/chevron-down.svg" class="h-5 w-5" alt="" />
           </div>
@@ -212,7 +212,7 @@
 <script setup>
 import gsap from "gsap";
 const menuState = useState("menuState");
-const homeMenuState = ref(false);
+const homeMenuState = useState("homeMenuState");
 
 const menuWrapper = ref(null);
 const darkWrapper = ref(null);
@@ -278,14 +278,25 @@ const onIndustrialLeave = () => {
 };
 
 const onMenuClose = () => {
-  gsap.to(menuWrapper.value, {
-    y: "-100%",
-    duration: 0.5,
+  const mm = gsap.matchMedia();
+
+  mm.add("(min-width:1024px)", () => {
+    gsap.to(menuWrapper.value, {
+      y: "-100%",
+      duration: 0.5,
+    });
+
+    gsap.to(darkWrapper.value, {
+      opacity: 0,
+      duration: 0.1,
+    });
   });
 
-  gsap.to(darkWrapper.value, {
-    opacity: 0,
-    duration: 0.1,
+  mm.add("(max-width: 1024px)", () => {
+    gsap.to(menuWrapper.value, {
+      x: "-100%",
+      duration: 0.5,
+    });
   });
 
   setTimeout(() => {

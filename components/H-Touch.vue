@@ -33,7 +33,7 @@
       /></a>
     </div>
 
-    <button class="flex lg:hidden items-center mt-2 touch-arrow-parent">
+    <button class="flex lg:hidden items-center mt-16 touch-arrow-parent">
       <span class="text-lg tracking-[0.6rem]">Contact Us</span>
       <img src="@/assets/arrow-right.svg" class="h-7 w-7 ml-1" alt="" />
     </button>

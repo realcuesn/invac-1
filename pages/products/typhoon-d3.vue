@@ -98,7 +98,8 @@
         more easier.
       </div>
 
-      <div
+      <NuxtLink  @click="selectedProduct = 1"
+        to="/demo"
         class="flex px-10 border-neutral-500 border rounded-2xl py-10 justify-between w-full"
       >
         <span class="text-white text-2xl font-semibold"
@@ -108,7 +109,7 @@
           <span class="text-sm tracking-[0.5rem]">Get A quote</span>
           <img src="@/assets/arrow-right.svg" class="h-7 ml-2" alt="" />
         </div>
-      </div>
+      </NuxtLink>
 
       <p class="text-sm text-neutral-500">
         *This pricing is only for the Product. Installation and piping are
@@ -126,7 +127,11 @@
 
         <div>
           <NuxtLink to="/">
-            <img src="@/assets/x.svg" class="h-10 w-10 sm:h-14 sm:w-14" alt="" />
+            <img
+              src="@/assets/x.svg"
+              class="h-10 w-10 sm:h-14 sm:w-14"
+              alt=""
+            />
           </NuxtLink>
         </div>
       </div>
@@ -206,17 +211,18 @@
         action makes cleaning on any surface a lot more easier.
       </p>
 
-      <h3 class="mt-14 text-white font-semibold text-xl text-end">
+      <h3 class="mt-14 text-white font-semibold text-xl text-left">
         ₹248,505.00 – ₹298,999.00
       </h3>
 
-      <div
+      <NuxtLink  @click="selectedProduct = 1"
+        to="/demo"
         class="w-full flex p-3 mt-10 border-neutral-500 border text-white rounded-xl justify-evenly sm:justify-center sm:gap-x-10 items-center text-sm tracking-[0.6rem]"
       >
         <span>Get A Quote</span>
 
         <img src="@/assets/arrow-right.svg" class="h-7" alt="" />
-      </div>
+      </NuxtLink>
 
       <p class="text-sm mt-14 text-neutral-500">
         *This pricing is only for the Product. Installation and piping are
@@ -228,7 +234,7 @@
 
 <script setup>
 const route = useRoute();
-
+const selectedProduct = useState("selectedProduct");
 useHead({
   title: "Typhoon D3",
 });

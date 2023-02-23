@@ -66,7 +66,7 @@
         <div class="ml-10">
           <p class="text-white text-base">Central</p>
           <p class="text-[#FF7900] text-base whitespace-nowrap">
-            Vacum Systerm
+            Vacuum Systerm
           </p>
         </div>
       </div>
