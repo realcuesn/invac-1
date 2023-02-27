@@ -2,6 +2,7 @@
   <div class="w-full overflow-x-clip">
     <NuxtPage></NuxtPage>
     <A-Menu v-if="menuState && !$route.fullPath.includes('products')"></A-Menu>
+    <A-Cities v-if="citiesState && !$route.fullPath.includes('products')" ></A-Cities>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 const menuState = useState("menuState", () => false);
 const homeMenuState = useState("homeMenuState", () => false);
 const selectedProduct = useState("selectedProduct", () => 0);
+const citiesState = useState("citiesState", () => false);
 onMounted(() => {
   const lenis = new Lenis({
     duration: 1.2,

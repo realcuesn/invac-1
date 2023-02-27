@@ -77,12 +77,44 @@
             >
               <input
                 type="text"
-                placeholder="Qty"
+                placeholder="City"
                 class="w-full outline-none"
               />
             </div>
           </div>
 
+          <input
+            type="name"
+            class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
+            placeholder="Type of home"
+          />
+
+
+          <div class="lg:flex justify-between">
+            <div
+              class="lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black"
+            >
+              <select
+ 
+                name="Model"
+                id="model"
+                class="w-full outline-none"
+              >
+              <option value="size of home">Size of home</option>
+              </select>
+              <img src="@/assets/chevron-down.svg" class="h-10 w-10" alt="" />
+            </div>
+
+            <div
+              class="mt-12 lg:mt-0 lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black"
+            >
+              <input
+                type="text"
+                placeholder="Current Stage"
+                class="w-full outline-none"
+              />
+            </div>
+          </div>
           <div class="flex ml-auto w-fit my-2 lg:my-14">
             <span class="text-4xl tracking-[0.6rem] opacity-70">Send</span
             ><img src="@/assets/arrow-right.svg" class="h-10 ml-3" alt="" />

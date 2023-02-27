@@ -17,7 +17,7 @@
       </div>
 
       <div class="h-full w-full flex items-center justify-center">
-        <img src="@/assets/product-5.png" class="h-[28rem]" alt="" />
+        <img src="@/assets/product-4.png" class="h-[28rem]" alt="" />
       </div>
 
       <div class="w-full flex justify-between min-h-fit max-h-fit py-10">
