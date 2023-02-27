@@ -82,6 +82,15 @@
           </div>
 
           <NuxtLink
+            to="/products/techno-plus-230"
+            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-neutral-500 rounded-2xl"
+          >
+            <span>230</span>
+
+            <img src="@/assets/selected.svg" class="h-6 w-6 opacity-0" alt="" />
+          </NuxtLink>
+
+          <NuxtLink
             to="/products/techno-plus-258"
             class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-neutral-500 rounded-2xl"
           >
@@ -92,7 +101,7 @@
 
           <NuxtLink
             to="/products/techno-plus-booster-158"
-            class="flex ml-40 items-center"
+            class="flex ml-4 items-center"
           >
             <div
               @click="boosterState = true"
@@ -119,7 +128,7 @@
       >
         <span
           class="text-white lg:text-lg xl:text-xl 2xl:text-2xl font-semibold"
-          >₹248,505.00 – ₹298,999.00</span
+          >₹4,98,305</span
         >
         <div class="flex items-center justify-center text-white">
           <span class="lg:text-xs 2xl:text-sm tracking-[0.5rem]"
@@ -204,13 +213,21 @@
 
     <div class="w-full px-10 pt-20 pb-10 bg-[#191919] lg:hidden">
       <h3 class="text-neutral-500 text-lg">Pick a model</h3>
-      <div class="flex justify-start mt-4 gap-x-6">
+      <div class="flex justify-start mt-4 gap-x-2">
         <div
           class="border-[#ff7900] border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
         >
           <span>158</span>
           <img src="@/assets/selected.svg" class="h-5 w-5" alt="" />
         </div>
+        <NuxtLink
+          to="/products/techno-plus-230"
+          class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
+        >
+          <span>230</span>
+
+          <img src="@/assets/selected.svg" class="h-5 w-5 opacity-0" alt="" />
+        </NuxtLink>
 
         <NuxtLink
           to="/products/techno-plus-258"
@@ -230,7 +247,7 @@
       </p>
 
       <h3 class="mt-14 text-white font-semibold text-xl text-left">
-        ₹248,505.00 – ₹298,999.00
+        ₹4,98,305
       </h3>
 
       <NuxtLink

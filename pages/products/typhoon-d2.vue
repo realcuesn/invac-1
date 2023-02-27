@@ -98,13 +98,12 @@
         action makes cleaning on any surface a lot more easier.
       </div>
 
-      <NuxtLink  @click="selectedProduct = 0"
+      <NuxtLink
+        @click="selectedProduct = 0"
         to="/demo"
         class="flex px-10 border-neutral-500 border rounded-2xl py-10 justify-between w-full"
       >
-        <span class="text-white text-2xl font-semibold"
-          >₹248,505.00 – ₹298,999.00</span
-        >
+        <span class="text-white text-2xl font-semibold">₹2,10,598</span>
         <div class="flex items-center justify-center text-white">
           <span class="text-sm tracking-[0.5rem]">Get A quote</span>
           <img src="@/assets/arrow-right.svg" class="h-7 ml-2" alt="" />
@@ -215,7 +214,8 @@
         ₹248,505.00 – ₹298,999.00
       </h3>
 
-      <NuxtLink  @click="selectedProduct = 0"
+      <NuxtLink
+        @click="selectedProduct = 0"
         to="/demo"
         class="w-full flex p-3 mt-10 border-neutral-500 border text-white rounded-xl justify-evenly sm:justify-center sm:gap-x-10 items-center text-sm tracking-[0.6rem]"
       >

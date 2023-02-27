@@ -82,21 +82,23 @@
             <img src="@/assets/selected.svg" class="h-6 w-6 opacity-0" alt="" />
           </NuxtLink>
 
-          <NuxtLink
-            to="/products/techno-plus-230"
-            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-neutral-500 rounded-2xl"
-          >
-            <span>230</span>
-
-            <img src="@/assets/selected.svg" class="h-6 w-6 opacity-0" alt="" />
-          </NuxtLink>
           <div
             class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-[#FF7900] rounded-2xl"
           >
-            <span>258</span>
+            <span>230</span>
 
             <img src="@/assets/selected.svg" class="h-6 w-6" alt="" />
           </div>
+
+
+          <NuxtLink
+            to="/products/techno-plus-258"
+            class="p-3 px-8 text-3xl items-center font-semibold text-white flex justify-center gap-x-6 border border-neutral-500 rounded-2xl"
+          >
+            <span>258</span>
+
+            <img src="@/assets/selected.svg" class="h-6 w-6 opacity-0" alt="" />
+          </NuxtLink>
         </div>
       </div>
 
@@ -109,10 +111,10 @@
 
       <NuxtLink
         to="/demo"
-        @click="selectedProduct = 4"
+        @click="selectedProduct = 5"
         class="flex px-10 border-neutral-500 border rounded-2xl py-10 justify-between w-full"
       >
-        <span class="text-white text-2xl font-semibold">₹7,90,244</span>
+        <span class="text-white text-2xl font-semibold">₹6,40,500</span>
         <div class="flex items-center justify-center text-white">
           <span class="text-sm tracking-[0.5rem]">Get A quote</span>
           <img src="@/assets/arrow-right.svg" class="h-7 ml-2" alt="" />
@@ -194,7 +196,7 @@
 
     <div class="w-full px-10 pt-20 pb-10 bg-[#191919] lg:hidden">
       <h3 class="text-neutral-500 text-lg">Pick a model</h3>
-      <div class="flex justify-start mt-4 gap-x-6">
+      <div class="flex justify-start mt-4 gap-x-2">
         <NuxtLink
           to="/products/techno-plus-158"
           class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
@@ -204,21 +206,22 @@
           <img src="@/assets/selected.svg" class="h-5 w-5 opacity-0" alt="" />
         </NuxtLink>
 
-        <NuxtLink
-          to="/products/techno-plus-230"
-          class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
-        >
-          <span>230</span>
-
-          <img src="@/assets/selected.svg" class="h-5 w-5 opacity-0" alt="" />
-        </NuxtLink>
         <div
           class="border-[#ff7900] border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
         >
-          <span>258</span>
+          <span>230</span>
 
           <img src="@/assets/selected.svg" class="h-5 w-5" alt="" />
         </div>
+
+        <NuxtLink
+          to="/products/techno-plus-258"
+          class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"
+        >
+          <span>258</span>
+
+          <img src="@/assets/selected.svg" class="h-5 w-5 opacity-0" alt="" />
+        </NuxtLink>
       </div>
 
       <p class="text-white mt-10 leading-6 text-lg">
@@ -229,11 +232,11 @@
       </p>
 
       <h3 class="mt-14 text-white font-semibold text-xl text-left">
-        ₹248,505.00 – ₹298,999.00
+        ₹6,40,500
       </h3>
 
       <NuxtLink
-        @click="selectedProduct = 4"
+        @click="selectedProduct = 5"
         to="/demo"
         class="w-full flex p-3 mt-10 border-neutral-500 border text-white rounded-xl justify-evenly sm:justify-center sm:gap-x-10 items-center text-sm tracking-[0.6rem]"
       >

@@ -66,6 +66,7 @@
                 <option value="techno-plus-158-booster">
                   TechnoPlus 158 + Booster
                 </option>
+                <option value="techno-plus-230">TechnoPlus 230</option>
                 <option value="techno-plus-258">TechnoPlus 258</option>
               </select>
               <img src="@/assets/chevron-down.svg" class="h-10 w-10" alt="" />
@@ -109,6 +110,8 @@ onMounted(() => {
       ? "techno-plus-158-booster"
       : selectedProduct.value == 4
       ? "techno-plus-258"
+      : selectedProduct.value == 5
+      ? "techno-plus-230"
       : "typhoon-d2";
   menuState.value = false;
 });
