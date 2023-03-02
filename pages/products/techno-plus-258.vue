@@ -134,13 +134,13 @@
         </div>
 
         <div>
-          <NuxtLink to="/">
+          <div @click="$router.go(-1)">
             <img
               src="@/assets/x.svg"
               class="h-10 w-10 sm:h-14 sm:w-14"
               alt=""
             />
-          </NuxtLink>
+          </div>
         </div>
       </div>
 
@@ -194,7 +194,7 @@
 
     <div class="w-full px-10 pt-20 pb-10 bg-[#191919] lg:hidden">
       <h3 class="text-neutral-500 text-lg">Pick a model</h3>
-      <div class="flex justify-start mt-4 gap-x-6">
+      <div class="flex justify-start mt-4 gap-x-2">
         <NuxtLink
           to="/products/techno-plus-158"
           class="border-neutral-500 border p-3 px-6 text-white flex items-center gap-x-6 text-lg rounded-xl"

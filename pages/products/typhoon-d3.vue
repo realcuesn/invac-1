@@ -98,7 +98,8 @@
         more easier.
       </div>
 
-      <NuxtLink  @click="selectedProduct = 1"
+      <NuxtLink
+        @click="selectedProduct = 1"
         to="/demo"
         class="flex px-10 border-neutral-500 border rounded-2xl py-10 justify-between w-full"
       >
@@ -126,13 +127,13 @@
         </div>
 
         <div>
-          <NuxtLink to="/">
+          <div @click="$router.go(-1)">
             <img
               src="@/assets/x.svg"
               class="h-10 w-10 sm:h-14 sm:w-14"
               alt=""
             />
-          </NuxtLink>
+          </div>
         </div>
       </div>
 
@@ -215,7 +216,8 @@
         ₹248,505.00 – ₹298,999.00
       </h3>
 
-      <NuxtLink  @click="selectedProduct = 1"
+      <NuxtLink
+        @click="selectedProduct = 1"
         to="/demo"
         class="w-full flex p-3 mt-10 border-neutral-500 border text-white rounded-xl justify-evenly sm:justify-center sm:gap-x-10 items-center text-sm tracking-[0.6rem]"
       >

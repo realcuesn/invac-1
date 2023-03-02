@@ -136,13 +136,13 @@
         </div>
 
         <div>
-          <NuxtLink to="/">
+          <div @click="$router.go(-1)">
             <img
               src="@/assets/x.svg"
               class="h-10 w-10 sm:h-14 sm:w-14"
               alt=""
             />
-          </NuxtLink>
+          </div>
         </div>
       </div>
 
