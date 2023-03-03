@@ -19,7 +19,7 @@
       /></NuxtLink>
 
       <NuxtLink
-        to="/"
+        to="/brochure-accessories"
         class="w-full p-10 flex justify-between items-center shadow-lg"
       >
         <h2 class="text-2xl font-medium italic text-[#686868]">Accessories</h2>
