@@ -31,7 +31,7 @@
         class="w-full flex items-center justify-between p-10 shadow-lg"
         ><img src="@/assets/techno-plus.svg" class="h-7" alt="" />
         <p class="text-xl font-semibold">+</p>
-        <img src="@/assets/typhoon.svg" alt="" class="h-7" />
+        <img src="@/assets/booster.svg" alt="" class="h-[1.15rem]" />
       </NuxtLink>
     </div>
     <H-Footer></H-Footer>
