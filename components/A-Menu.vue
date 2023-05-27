@@ -1,330 +1,179 @@
 <template>
-  <div class="fixed top-0 w-full flex lg:h-screen flex-col" ref="menuWrapper">
-    <div
-      class="h-screen flex flex-col lg:h-fit lg:block w-full lg:min-h-fit bg-white pb-10 lg:pb-20"
-    >
-      <nav
-        class="w-full max-h-fit min-h-fit flex items-center justify-between pt-14 lg:pt-20 px-10 lg:px-20"
-      >
-        <NuxtLink to="/">
-          <img src="@/assets/logo-white.svg" class="h-7 sm:h-7 lg:h-7" alt="" />
-        </NuxtLink>
+    <div ref="menuContainer"
+        class="h-screen w-full lg:w-[50vw] fixed right-0 top-0 bg-white flex flex-col py-20 px-10 lg:px-16 xl:px-20 justify-between text-black">
+        <div class="w-full flex lg:h-28"></div>
+        <div class="h-full w-full flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-16 2xl:gap-y-20">
+            <div class="w-full flex justify-end overflow-y-clip lg:hidden">
+                <img @click="triggerClose" src="@/assets/icons/x.svg" ref="closeMenuResponsive"
+                    class="h-12 hover:opacity-40 translate-y-[100%] active:opacity-90 cursor-pointer transition-opacity duration-500"
+                    alt="" />
+            </div>
+            <div class="flex items-center w-full justify-between">
+                <div class="overflow-y-clip block">
+                    <div class="translate-y-[100%]" ref="shop">
+                        <NuxtLink to="/shop-category" @click="triggerClose"
+                            class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                            Shop</NuxtLink>
+                    </div>
+                </div>
 
-        <div class="hidden lg:flex items-center">
-          <div @click="onMenuClose" class="flex items-center">
-            <span class="tracking-[0.8rem] text-xl block">Products</span>
-            <img src="@/assets/chevron-down.svg" class="h-5 w-5" alt="" />
-          </div>
+                <div class="overflow-y-clip hidden lg:block">
+                    <img @click="triggerClose" src="@/assets/icons/x.svg" ref="closeMenu"
+                        class="lg:h-12 xl:h-16 hover:opacity-40 translate-y-[100%] active:opacity-90 cursor-pointer transition-opacity duration-500"
+                        alt="" />
+                </div>
+            </div>
 
-          <NuxtLink
-            @click="onMenuClose"
-            to="/demo"
-            class="text-xl tracking-[0.8rem] ml-20 p-4 rounded-xl px-11 border-2 border-[#FF7900]"
-          >
-            Book A Demo
-          </NuxtLink>
+            <div class="overflow-y-clip block">
+                <div class="translate-y-[100%]" ref="accessories">
+                    <NuxtLink to="/accessories" @click="triggerClose"
+                        class=" text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                        Accessories</NuxtLink>
+                </div>
+            </div>
+
+            <div class="overflow-y-clip block">
+                <div class="translate-y-[100%]" ref="demo">
+                    <NuxtLink to="/demo" @click="triggerClose"
+                        class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                        Book A Demo</NuxtLink>
+                </div>
+            </div>
+
+            <div class="overflow-y-clip block">
+                <div class="translate-y-[100%]" ref="contactUs">
+                    <NuxtLink to="/contact-us" @click="triggerClose"
+                        class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                        Contact Us</NuxtLink>
+                </div>
+            </div>
         </div>
+        <div class="lg:flex items-center justify-between w-full">
+            <div class="overflow-y-clip">
+                <div ref="inTouch"
+                    class="font-normal text-neutral-400 translate-y-[100%] text-xl lg:text-lg xl:text-xl 2xl:text-2xl">
+                    Stay <span class="font-semibold text-neutral-500">in touch</span>
+                </div>
+            </div>
 
-        <div class="opacity-0 lg:hidden">
-          <img
-            src="@/assets/burger.svg"
-            class="h-8 w-8 sm:h-10 sm:w-10"
-            alt=""
-          />
+            <div class="flex mt-7 lg:mt-0 items-center gap-x-14 lg:gap-x-8 xl:gap-x-10 2xl:gap-x-14 overflow-y-clip">
+                <img src="@/assets/icons/facebook-gray.svg" ref="facebook"
+                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                <img src="@/assets/icons/instagram-gray.svg" ref="instagram"
+                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                <img src="@/assets/icons/twitter-gray.svg" ref="twitter"
+                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                <img src="@/assets/icons/linkdin-gray.svg" ref="linkdin"
+                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+            </div>
         </div>
-      </nav>
-
-      <div
-        v-if="homeMenuState"
-        class="px-10 justify-between h-full lg:h-fit lg:px-20 flex flex-col lg:flex-row items-end mt-14"
-      >
-        <div
-          class="lg:h-72 xl:h-80 2xl:h-96 flex flex-row w-full items-center lg:w-fit lg:flex-col lg:items-start lg:justify-between min-w-fit"
-        >
-          <img
-            @click="homeMenuState = false"
-            src="@/assets/arrow-right.svg"
-            class="h-5 lg:h-7 rotate-180 cursor-pointer"
-            alt=""
-          />
-
-          <h3
-            class="hidden lg:block lg:text-xl xl:text-[1.7rem] 2xl:text-4xl min-w-fit mb-10"
-          >
-            For The <span class="font-semibold">Homes</span>
-          </h3>
-
-          <h3
-            class="lg:hidden tracking-[0.6rem] ml-5 lg:text-xl xl:text-[1.7rem] 2xl:text-4xl min-w-fit"
-          >
-            Back
-          </h3>
-        </div>
-
-        <div
-          class="w-full flex flex-col sm:gap-y-5 lg:gap-y-0 lg:flex-row justify-end gap-x-10"
-        >
-          <h4 class="text-2xl sm:text-4xl -mb-10 mt-10 lg:hidden">
-            For The <span class="font-semibold block">Homes</span>
-          </h4>
-
-          <NuxtLink
-            @mouseover="onTyphoonHover"
-            @mouseleave="onTyphoonLeave"
-            to="/products/typhoon-d2"
-            class="w-[100%] h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-96 flex justify-evenly items-center relative"
-          >
-            <img
-              src="@/assets/typhoon.svg"
-              class="h-7 sm:h-16 sm:mt-40 mt-24 lg:h-7 lg:mt-28 xl:h-10 xl:mt-28 2xl:h-11 2xl:mt-48 z-10"
-              alt=""
-            />
-
-            <img
-              ref="typhoonRef"
-              src="@/assets/product-1.png"
-              class="h-40 sm:h-72 lg:h-52 xl:h-60 2xl:h-80 z-10"
-              alt=""
-            />
-
-            <div
-              class="w-full h-[50%] absolute bg-white rounded-lg shadow-2xl bottom-0"
-            ></div>
-          </NuxtLink>
-
-          <NuxtLink
-            @mouseover="onTechnoHover"
-            @mouseleave="onTechnoLeave"
-            to="/products/techno-plus-158"
-            class="w-[100%] h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-96 flex justify-evenly items-center relative"
-          >
-            <img
-              src="@/assets/techno-plus.svg"
-              class="h-9 sm:h-20 sm:mt-40 mt-24 lg:h-7 lg:mt-28 xl:h-10 xl:mt-28 2xl:h-12 2xl:mt-48 z-10"
-              alt=""
-            />
-
-            <img
-              ref="technoRef"
-              src="@/assets/product-3.png"
-              class="h-40 sm:h-72 lg:h-52 xl:h-60 2xl:h-80 z-10"
-              alt=""
-            />
-
-            <div
-              class="w-full h-[50%] absolute bg-white rounded-lg shadow-2xl bottom-0"
-            ></div>
-          </NuxtLink>
-        </div>
-      </div>
-
-      <div
-        v-else
-        class="px-10 justify-between h-full lg:h-fit lg:px-20 flex flex-col lg:flex-row items-end mt-14"
-      >
-        <div
-          class="lg:h-72 xl:h-80 2xl:h-96 flex flex-row w-full items-center lg:w-fit lg:flex-col lg:items-start lg:justify-between min-w-fit"
-        >
-          <img
-            @click="onMenuClose"
-            src="@/assets/arrow-right.svg"
-            class="h-5 lg:h-7 rotate-180 cursor-pointer"
-            alt=""
-          />
-
-          <h3
-            class="hidden lg:block lg:text-xl xl:text-[1.7rem] 2xl:text-4xl min-w-fit mb-10"
-          >
-            We've Got your homes <br />
-            and offices <span class="font-semibold">covered</span>
-          </h3>
-
-          <h3
-            class="lg:hidden tracking-[0.6rem] ml-5 lg:text-xl xl:text-[1.7rem] 2xl:text-4xl min-w-fit"
-          >
-            Back
-          </h3>
-        </div>
-
-        <div
-          class="w-full h-full lg:h-72 xl:h-80 2xl:h-96 lg:items-end flex flex-col gap-y-3 justify-evenly sm:gap-y-5 lg:gap-y-0 lg:flex-row lg:justify-end gap-x-10"
-        >
-          <h4 class="text-lg sm:text-4xl mt-10 lg:hidden">
-            We've got your homes <br />
-            and offices <span class="font-semibold">covered</span>
-          </h4>
-
-          <div
-            @click="homeMenuState = true"
-            ref="homesRef"
-            @mouseover="onHomeHover"
-            @mouseleave="onHomeLeave"
-            class="w-[100%] rounded-2xl h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-72 relative cursor-pointer"
-          >
-            <img
-              src="@/assets/home-thumbnail.png"
-              class="rounded-2xl h-full w-full object-cover"
-              alt=""
-            />
-
-            <p
-              class="absolute left-10 top-10 text-2xl sm:text-4xl lg:text-2xl xl:text-xl 2xl:text-2xl text-black font-semibold"
-            >
-              For Homes
-            </p>
-          </div>
-
-          <div
-            ref="industrialRef"
-            @mouseover="onIndustrailHover"
-            @mouseleave="onIndustrialLeave"
-            class="w-[100%] rounded-2xl h-52 sm:h-80 lg:w-80 xl:w-[22rem] lg:h-60 2xl:w-[29rem] 2xl:h-72 relative cursor-not-allowed"
-          >
-            <img
-              src="@/assets/industrial-thumbnail.png"
-              class="h-full w-full rounded-2xl object-cover"
-              alt=""
-            />
-
-            <p
-              class="absolute left-10 top-10 text-xl sm:text-4xl lg:text-2xl xl:text-xl 2xl:text-2xl text-white font-semibold"
-            >
-              Industrial
-            </p>
-            <p
-              class="absolute bottom-10 left-10 text-sm sm:text-base lg:text-sm text-white tracking-[0.6rem]"
-            >
-              Coming Soon
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div
-      class="h-0 w-0 lg:h-full lg:w-full lg:bg-black opacity-0"
-      ref="darkWrapper"
-      @click="onMenuClose"
-    ></div>
-  </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import gsap from "gsap";
-const menuState = useState("menuState");
-const homeMenuState = useState("homeMenuState");
+const menuContainer = ref<HTMLElement | null>(null);
+const accessories = ref<HTMLElement | null>(null);
+const demo = ref<HTMLElement | null>(null);
+const contactUs = ref<HTMLElement | null>(null);
+const shop = ref<HTMLElement | null>(null);
+const closeMenu = ref<HTMLElement | null>(null);
+const closeMenuResponsive = ref<HTMLElement | null>(null);
+const inTouch = ref<HTMLElement | null>(null);
+const facebook = ref<HTMLElement | null>(null);
+const instagram = ref<HTMLElement | null>(null);
+const twitter = ref<HTMLElement | null>(null);
+const linkdin = ref<HTMLElement | null>(null);
 
-const menuWrapper = ref(null);
-const darkWrapper = ref(null);
-const homesRef = ref(null);
-const industrialRef = ref(null);
-const typhoonRef = ref(null);
-const technoRef = ref(null);
-
-const onTyphoonHover = () => {
-  gsap.to(typhoonRef.value, {
-    y: "-10%",
-    duration: 0.5,
-  });
-};
-
-const onTyphoonLeave = () => {
-  gsap.to(typhoonRef.value, {
-    y: "0%",
-    duration: 0.5,
-  });
-};
-
-const onTechnoHover = () => {
-  gsap.to(technoRef.value, {
-    y: "-10%",
-    duration: 0.5,
-  });
-};
-
-const onTechnoLeave = () => {
-  gsap.to(technoRef.value, {
-    y: "0%",
-    duration: 0.5,
-  });
-};
-
-const onHomeHover = () => {
-  gsap.to(homesRef.value, {
-    y: "-10%",
-    duration: 0.5,
-  });
-};
-
-const onHomeLeave = () => {
-  gsap.to(homesRef.value, {
-    y: "0%",
-    duration: 0.5,
-  });
-};
-
-const onIndustrailHover = () => {
-  gsap.to(industrialRef.value, {
-    y: "-10%",
-    duration: 0.5,
-  });
-};
-
-const onIndustrialLeave = () => {
-  gsap.to(industrialRef.value, {
-    y: "0%",
-    duration: 0.5,
-  });
-};
-
-const onMenuClose = () => {
-  const mm = gsap.matchMedia();
-
-  mm.add("(min-width:1024px)", () => {
-    gsap.to(menuWrapper.value, {
-      y: "-100%",
-      duration: 0.5,
+const menuState = useState('menu')
+const triggerClose = () => {
+    document.querySelector("body")?.classList.remove("no-scroll");
+    gsap.to(menuContainer.value, {
+        x: "100vw",
+        duration: 1.8,
+        ease: "power4.out",
     });
-
-    gsap.to(darkWrapper.value, {
-      opacity: 0,
-      duration: 0.1,
-    });
-  });
-
-  mm.add("(max-width: 1024px)", () => {
-    gsap.to(menuWrapper.value, {
-      x: "-100%",
-      duration: 0.5,
-    });
-  });
-
-  setTimeout(() => {
-    menuState.value = false;
-  }, 500);
-};
+    setTimeout(() => {
+        menuState.value = false;
+    }, 1800);
+}
 
 onMounted(() => {
-  const mm = gsap.matchMedia();
 
-  mm.add("(min-width: 1024px)", () => {
-    gsap.from(menuWrapper.value, {
-      y: "-100%",
-      duration: 0.5,
+    document.querySelector("body")?.classList.add("no-scroll");
+
+    gsap.from(menuContainer.value, {
+        x: "100vw",
+        duration: 1.2,
+        ease: "power4.out",
     });
 
-    gsap.to(darkWrapper.value, {
-      opacity: 0.5,
-      delay: 0.5,
-      duration: 0.5,
+    gsap.to(closeMenu.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 0.8,
     });
-  });
 
-  mm.add("(max-width: 1024px)", () => {
-    gsap.from(menuWrapper.value, {
-      x: "+100%",
-      duration: 0.5,
+    gsap.to(closeMenuResponsive.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 0.8,
     });
-  });
+
+    gsap.to(shop.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 1.2,
+    });
+
+    gsap.to(accessories.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 1.5,
+    });
+
+    gsap.to(demo.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 1.9,
+    });
+
+    gsap.to(contactUs.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 2.2,
+    });
+
+    gsap.to(inTouch.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 2.5,
+    });
+
+    gsap.to(facebook.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 2.8,
+    });
+
+    gsap.to(instagram.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 3.1,
+    });
+
+    gsap.to(twitter.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 3.4,
+    });
+
+    gsap.to(linkdin.value, {
+        y: "0%",
+        duration: 1.5,
+        delay: 3.7,
+    });
 });
 </script>
+
+<style scoped></style>

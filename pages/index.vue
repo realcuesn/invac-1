@@ -1,20 +1,30 @@
 <template>
-  <div class="w-full">
-    <H-Hero></H-Hero>
-    <H-Reel></H-Reel>
-    <H-Vacuum></H-Vacuum>
-    <H-Family></H-Family>
-    <H-Touch></H-Touch>
-    <H-Footer></H-Footer>
+  <div class="w-full bg-[#1A1A1A]">
+    <H-Header />
+    <H-Second />
+    <H-Third />
+    <H-Fourth />
+    <H-Sixth />
+    <A-Footer />
   </div>
 </template>
 
-<script setup>
+
+<script>
+
 useHead({
-  title: "Invac - Home",
-});
+  title: 'Invac - Home',
+  meta: [
+    {
+      name: 'description',
+      content: 'Central vacuum systems clean dust, allergens, viruses, and pollutants invisible to the naked eye.'
+    }
+  ]
+})
+
 definePageMeta({
   scrollToTop: true,
   pageTransition: false,
 });
+
 </script>

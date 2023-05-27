@@ -1,16 +1,15 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
-  css: ["~/assets/fonts/stylesheet.css", "~/assets/css/main.css"],
-  app: {
-    head: {
-      title: "Invac",
-    },
-  },
+  css: ['~/assets/css/main.css', '~/assets/fonts/stylesheet.css'],
+  modules: [
+    '@vueuse/nuxt',
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-});
+
+  devtools: true
+})
