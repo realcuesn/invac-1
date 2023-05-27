@@ -1,9 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: ['~/assets/css/main.css', '~/assets/fonts/stylesheet.css'],
-  modules: [
-    '@vueuse/nuxt',
-  ],
+  ssr: false,
+  css: ["~/assets/css/main.css", "~/assets/fonts/stylesheet.css"],
+  modules: ["@vueuse/nuxt"],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -11,5 +10,5 @@ export default defineNuxtConfig({
     },
   },
 
-  devtools: true
-})
+  devtools: true,
+});

@@ -1,7 +1,9 @@
 <template>
   <div class=" w-screen bg-[#1A1A1A] text-white">
-    <NuxtPage />
-    <A-Menu v-if="menuState" />
+    <ClientOnly>
+      <NuxtPage />
+      <A-Menu v-if="menuState" />
+    </ClientOnly>
   </div>
 </template>
 
@@ -29,7 +31,7 @@ onMounted(() => {
     /*   console.log({ scroll, limit, velocity, direction, progress }); */
   });
 
-  function raf(time:any) {
+  function raf(time: any) {
     lenis.raf(time);
     requestAnimationFrame(raf);
   }
