@@ -10,7 +10,7 @@
             <img src="../assets/icons/orange-arrow-right.svg" class="h-5 lg:h-8 lg:ml-10" alt="" />
           </div>
   
-          <img src="@/assets/logo-white.svg" class="h-5 lg:h-7" alt="" />
+          <img src="@/assets/icons/logo-white.svg" class="h-5 lg:h-7" alt="" />
         </div>
   
         <div
