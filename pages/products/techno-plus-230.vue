@@ -23,12 +23,12 @@
                         </div>
 
                         <div class="flex flex-col gap-y-10 mr-auto pl-10 2xl:pl-20">
+                            <img src="@/assets/icons/wet-and-dry.svg" class="h-14 2xl:h-20" alt="" />
                             <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-16 2xl:h-24 invert"
                                 alt="" />
-                            <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-16 2xl:h-24 invert"
-                                alt="" />
-                            <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-16 2xl:h-24 invert"
-                                alt="" />
+                            <img src="@/assets/icons/twin-motor.svg" class="h-16 2xl:h-24" alt="" />
+
+                            <img src="@/assets/icons/fully-auto-flies.svg" class="h-14 2xl:h-20" alt="" />
                         </div>
 
                         <div class="py-20"></div>
@@ -88,44 +88,44 @@
                             class="grid grid-cols-4 items-center justify-evenly pr-2 w-full px-5 2xl:px-10 pb-4 border-b-2 border-black">
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Airwatts</h2>
-                                <p class="text-sm 2xl:text-lg">524</p>
+                                <p class="text-sm 2xl:text-lg">2X534</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">mmh20</h2>
-                                <p class="text-sm 2xl:text-lg">3860</p>
+                                <p class="text-sm 2xl:text-lg">4591</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">mm3/h</h2>
-                                <p class="text-sm 2xl:text-lg">258</p>
+                                <p class="text-sm 2xl:text-lg">358</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Decibles</h2>
-                                <p class="text-sm 2xl:text-lg">{{ "<60" }}</p>
+                                <p class="text-sm 2xl:text-lg">{{ "68" }}</p>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-4 items-center justify-evenly pr-2 w-full px-5 2xl:px-10 pt-4">
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Motor</h2>
-                                <p class="text-sm 2xl:text-lg">1</p>
+                                <p class="text-sm 2xl:text-lg">2</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Amps</h2>
-                                <p class="text-sm 2xl:text-lg">7.86</p>
+                                <p class="text-sm 2xl:text-lg">13.7x2</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Capacity</h2>
-                                <p class="text-sm 2xl:text-lg">22</p>
+                                <p class="text-sm 2xl:text-lg">25</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Size(cm)</h2>
-                                <p class="text-sm 2xl:text-lg">{{ "29 Dia x 89" }}</p>
+                                <p class="text-sm 2xl:text-lg">{{ "35 Dia x 120" }}</p>
                             </div>
                         </div>
                     </div>
@@ -192,9 +192,9 @@
                 </div>
                 <div v-else class="w-full">
                     <div class="w-full flex items-center sm:justify-start sm:gap-x-20 justify-between mt-10">
-                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-24 invert" alt="">
-                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-24 invert" alt="">
-                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-24 invert" alt="">
+                        <img src="@/assets/icons/wet-and-dry.svg" class="w-20 " alt="">
+                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="w-16 invert" alt="">
+                        <img src="@/assets/icons/twin-motor.svg" class="w-[4.5rem] " alt="">
                     </div>
 
                     <div class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
@@ -222,19 +222,21 @@
 
 <script setup>
 const menuState = useState("menu");
-const descriptionState = ref(true);
-
+const descriptionState = ref(false);
+definePageMeta({
+    scrollToTop: true
+})
 useHead({
-    title: 'Invac - Techno Plus 158',
+    title: 'Invac - Techno Plus 230',
     meta: [
         {
             name: 'description',
-            content: 'Central vacuum systems clean dust, allergens, viruses, and pollutants invisible to the naked eye.'
+            content: "Most powerful machine in the range. Automatically sucks up liquids and drains directly to the sewage. Self-flushing system also provides infinite capacity and simple operation. Water injectors turn dust into sludge."
         }
     ]
 })
 const description = ref(
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quamquisquam similique iste dolores possimus enim deleniti omnis deserunt, velit voluptates voluptatum, earum harum dolorem odit! Quasnulla rem asperiores unde!"
+    "Most powerful machine in the range. Automatically sucks up liquids and drains directly to the sewage. Self-flushing system also provides infinite capacity and simple operation. Water injectors turn dust into sludge."
 );
 const triggerMenu = () => {
     menuState.value = true;
@@ -250,4 +252,5 @@ const triggerMenu = () => {
 .router-link-active img {
     opacity: 1;
 
-}</style>
+}
+</style>

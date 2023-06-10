@@ -8,12 +8,12 @@
 
                 <div
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
-                    <img src="@/assets/images/home-static/white_background/Typhoon_D3.jpg"
-                        class="h-full w-full object-cover rounded-md absolute" alt="">
+                    <NuxtImg src="/images/home-static/white_background/Typhoon_D3.jpg" sizes="sm:950px"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
                     <div
                         class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
-                        <img src="@/assets/images/home-static/black_background/Typhoon_D3.png"
-                            class="h-full w-full object-cover rounded-md" alt="">
+                        <NuxtImg src="/images/home-static/black_background/Typhoon_D3.png" sizes="sm:950px"
+                            class="h-full w-full object-cover rounded-md" alt="" />
                         <div
                             class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
                             <img src="@/assets/images/home-static/names/typhoon_d3.svg" class="lg:h-14 xl:h-16 2xl:h-20"
@@ -24,12 +24,12 @@
 
                 <div
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
-                    <img src="@/assets/images/home-static/white_background/Techno_Plus_158.jpg"
-                        class="h-full w-full object-cover rounded-md absolute" alt="">
+                    <NuxtImg src="/images/home-static/white_background/Techno_Plus_158.jpg" sizes="sm:950px"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
                     <div
                         class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
-                        <img src="@/assets/images/home-static/black_background/Techno_Plus_158.png"
-                            class="h-full w-full object-cover rounded-md" alt="">
+                        <NuxtImg sizes="sm:950px" src="/images/home-static/black_background/Techno_Plus_158.png"
+                            class="h-full w-full object-cover rounded-md" alt="" />
                         <div
                             class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
                             <img src="@/assets/images/home-static/names/techno-158.svg" class="lg:h-14 xl:h-16 2xl:h-20"
@@ -40,12 +40,12 @@
 
                 <div
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
-                    <img src="@/assets/images/home-static/white_background/Techno_Plus_230.jpg"
-                        class="h-full w-full object-cover rounded-md absolute" alt="">
+                    <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_230.jpg"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
                     <div
                         class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
-                        <img src="@/assets/images/home-static/black_background/Techno_Plus_230.png"
-                            class="h-full w-full object-cover rounded-md" alt="">
+                        <NuxtImg sizes="sm:950px" src="/images/home-static/black_background/Techno_Plus_230.png"
+                            class="h-full w-full object-cover rounded-md" alt="" />
                         <div
                             class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
                             <img src="@/assets/images/home-static/names/techno-230.svg" class="lg:h-14 xl:h-16 2xl:h-20"
@@ -56,12 +56,12 @@
 
                 <div
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
-                    <img src="@/assets/images/home-static/white_background/Techno_Plus_230_booster.jpg"
-                        class="h-full w-full object-cover rounded-md absolute" alt="">
+                    <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_230_booster.jpg"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
                     <div
                         class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
-                        <img src="@/assets/images/home-static/black_background/Techno_Plus_230_booster.png"
-                            class="h-full w-full object-cover rounded-md" alt="">
+                        <NuxtImg sizes="sm:950px" src="/images/home-static/black_background/Techno_Plus_230_booster.png"
+                            class="h-full w-full object-cover rounded-md" alt="" />
                         <div
                             class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
                             <img src="@/assets/images/home-static/names/techno-230-booster.svg"
@@ -72,12 +72,12 @@
 
                 <div
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
-                    <img src="@/assets/images/home-static/white_background/Techno_Plus_258.jpg"
-                        class="h-full w-full object-cover rounded-md absolute" alt="">
+                    <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_258.jpg"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
                     <div
                         class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
-                        <img src="@/assets/images/home-static/black_background/Techno_Plus_258.png"
-                            class="h-full w-full object-cover rounded-md" alt="">
+                        <NuxtImg src="/images/home-static/black_background/Techno_Plus_258.png"
+                            class="h-full w-full object-cover rounded-md" alt="" />
                         <div
                             class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
                             <img src="@/assets/images/home-static/names/techno-258.svg" class="lg:h-14 xl:h-16 2xl:h-20"
@@ -93,19 +93,23 @@
     </div>
 
     <div class="h-fit w-full lg:hidden pb-10">
-        <h3 class="text-center my-10 text-neutral-300 text-base">Our Collection</h3>
+        <div class="flex justify-between items-center px-10">
+            <h3 class="text-center my-10 text-neutral-300 text-base">Our Collection</h3>
+            <p class="text-neutral-600 font-medium text-sm">Drag to explore</p>
+        </div>
+
         <div class="flex w-full overflow-x-auto gap-x-8 pl-10 pr-10 scroll-stuff-res">
             <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
-                <img src="@/assets/images/home-static/black_background/Typhoon_D3.png"
-                    class="h-full w-full object-cover rounded-md" alt="">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Typhoon_D3.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/typhoon_d3.svg" class="h-14" alt="">
                 </div>
             </div>
 
             <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
-                <img src="@/assets/images/home-static/black_background/Techno_Plus_158.png"
-                    class="h-full w-full object-cover rounded-md" alt="">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_158.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-158.svg" class="h-14" alt="">
                 </div>
@@ -113,8 +117,8 @@
 
 
             <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
-                <img src="@/assets/images/home-static/black_background/Techno_Plus_230.png"
-                    class="h-full w-full object-cover rounded-md" alt="">
+                <NuxtImg src="/images/home-static/white_background/Techno_Plus_230.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-230.svg" class="h-14" alt="">
                 </div>
@@ -123,8 +127,8 @@
 
 
             <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
-                <img src="@/assets/images/home-static/black_background/Techno_Plus_230_booster.png"
-                    class="h-full w-full object-cover rounded-md" alt="">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_230_booster.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-230-booster.svg" class="h-14" alt="">
                 </div>
@@ -132,8 +136,8 @@
 
 
             <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
-                <img src="@/assets/images/home-static/black_background/Techno_Plus_258.png"
-                    class="h-full w-full object-cover rounded-md" alt="">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_258.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-258.svg" class="h-14" alt="">
                 </div>

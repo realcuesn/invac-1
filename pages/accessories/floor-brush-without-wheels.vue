@@ -135,6 +135,15 @@ useHead({
 const triggerMenu = () => {
     menuState.value = true;
 };
+onMounted(() => {
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, 500);
+
+})
 </script>
 
 

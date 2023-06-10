@@ -3,7 +3,7 @@
         <div class="hidden bg-white lg:flex">
             <div class="w-[55%] min-h-screen max-h-screen h-screen sticky top-0">
                 <div class="h-full w-full relative">
-                    <img src="@/assets/products/static/typhoon-d2.png" class="h-full w-full object-cover object-center"
+                    <img src="@/assets/products/static/typhoon-d3.png" class="h-full w-full object-cover object-center"
                         alt="" />
                     <div class="h-full w-full absolute top-0 flex flex-col justify-between">
                         <div
@@ -23,12 +23,12 @@
                         </div>
 
                         <div class="flex flex-col gap-y-10 mr-auto pl-10 2xl:pl-20">
+                            <img src="@/assets/icons/wet-and-dry.svg" class="h-14 2xl:h-20" alt="" />
                             <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-16 2xl:h-24 invert"
                                 alt="" />
-                            <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-16 2xl:h-24 invert"
-                                alt="" />
-                            <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-16 2xl:h-24 invert"
-                                alt="" />
+                            <img src="@/assets/icons/quiet-function.svg" class="h-16 2xl:h-24" alt="" />
+
+                            <img src="@/assets/icons/semi-auto.svg" class="h-14 2xl:h-20" alt="" />
                         </div>
 
                         <div class="py-20"></div>
@@ -82,7 +82,7 @@
                             class="grid grid-cols-4 items-center justify-evenly pr-2 w-full px-5 2xl:px-10 pb-4 border-b-2 border-black">
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Airwatts</h2>
-                                <p class="text-sm 2xl:text-lg">524</p>
+                                <p class="text-sm 2xl:text-lg">600</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
@@ -97,7 +97,7 @@
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Decibles</h2>
-                                <p class="text-sm 2xl:text-lg">{{ "<60" }}</p>
+                                <p class="text-sm 2xl:text-lg">{{ "58" }}</p>
                             </div>
                         </div>
 
@@ -114,7 +114,7 @@
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Capacity</h2>
-                                <p class="text-sm 2xl:text-lg">22</p>
+                                <p class="text-sm 2xl:text-lg">28</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
@@ -146,7 +146,7 @@
         <div class="lg:hidden relative bg-white">
 
             <div class="h-[70vh] w-full">
-                <img src="@/assets/products/static/typhoon-d2.png" class="h-full w-full object-cover" alt="">
+                <img src="@/assets/products/static/typhoon-d3.png" class="h-full w-full object-cover" alt="">
             </div>
             <div class="w-full px-10 pb-10 text-black">
                 <div class="w-full flex items-center justify-center py-14">
@@ -180,9 +180,9 @@
                 </div>
                 <div v-else class="w-full">
                     <div class="w-full flex items-center sm:justify-start sm:gap-x-20 justify-between mt-10">
-                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-24 invert" alt="">
-                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-24 invert" alt="">
-                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="h-24 invert" alt="">
+                        <img src="@/assets/icons/wet-and-dry.svg" class="w-20 " alt="">
+                        <img src="@/assets/icons/10x-powerful-cyclonic-suction.svg" class="w-16 invert" alt="">
+                        <img src="@/assets/icons/quiet-function.svg" class="w-[4.5rem] " alt="">
                     </div>
 
                     <div class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
@@ -210,19 +210,21 @@
 
 <script setup>
 const menuState = useState("menu");
-const descriptionState = ref(true);
-
+const descriptionState = ref(false);
+definePageMeta({
+    scrollToTop: true
+})
 useHead({
-    title: 'Invac - Typhoon D2',
+    title: 'Invac - Typhoon D3',
     meta: [
         {
             name: 'description',
-            content: 'Central vacuum systems clean dust, allergens, viruses, and pollutants invisible to the naked eye.'
+            content: "Bag-less central vacuum with cyclonic action generating powerful & constant suction. These models can also sucks liquids. Powerful typhoon action makes cleaning on any surface a lot more easier."
         }
     ]
 })
 const description = ref(
-    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quamquisquam similique iste dolores possimus enim deleniti omnis deserunt, velit voluptates voluptatum, earum harum dolorem odit! Quasnulla rem asperiores unde!"
+    "Bag-less central vacuum with cyclonic action generating powerful & constant suction. These models can also sucks liquids. Powerful typhoon action makes cleaning on any surface a lot more easier."
 );
 const triggerMenu = () => {
     menuState.value = true;
@@ -238,4 +240,5 @@ const triggerMenu = () => {
 .router-link-active img {
     opacity: 1;
 
-}</style>
+}
+</style>

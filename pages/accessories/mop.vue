@@ -133,6 +133,15 @@ const description = ref('The Mop Without Wheels Extension for Vacuums is a game-
 const triggerMenu = () => {
     menuState.value = true;
 };
+onMounted(() => {
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }, 500);
+
+})
 </script>
 
 

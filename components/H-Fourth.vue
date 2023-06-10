@@ -55,59 +55,53 @@
                 <div class="flex flex-col">
                     <div @click="triggerToggle" class="flex items-center gap-x-44 border-b-2 border-white w-fit pb-1">
                         <span class=" text-lg">More Info</span>
-                        <img ref="chevron" src="@/assets/icons/chevron-up.svg" class="h-4 w-4 rotate-180" alt="">
+                        <img v-if="toggle" ref="chevron" src="@/assets/icons/chevron-up.svg" class="h-4 w-4" alt="">
+                        <img v-else ref="chevron" src="@/assets/icons/chevron-up.svg" class="h-4 w-4 rotate-180" alt="">
                     </div>
 
                     <div ref="heightContainer" class="w-full overflow-y-clip h-0">
                         <div v-if="toggle && toggleNum == 1" class="pt-10">
-                            <p> Keeping your kitchen cleaner just got a lot easier with
-                                Kickvac – a simple, powerful always available vacuum to suck
-                                away floor sweepings. Conveniently placed in the kitchen,
-                                requires no setup or put away time. Kickvac makes your life
-                                easier by reducing manual cleaning process.</p>
+                            <p> Keeping your kitchen cleaner just got a lot easier with Kickvac – a simple, powerful always
+                                available vacuum to suck away floor sweepings. Conveniently placed in the kitchen, requires
+                                no setup or put away time. Kickvac makes your life easier by reducing manual cleaning
+                                process. simply dispose of your floor sweeping in 3 seconds flat. </p>
 
-                            <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p>
+                            <!--     <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p> -->
                         </div>
 
 
                         <div v-if="toggle && toggleNum == 2" class="pt-10">
-                            <p> Keeping your kitchen cleaner just got a lot easier with
-                                Kickvac – a simple, powerful always available vacuum to suck
-                                away floor sweepings. Conveniently placed in the kitchen,
-                                requires no setup or put away time. Kickvac makes your life
-                                easier by reducing manual cleaning process.</p>
+                            <p> Drawervac is a new central vacuum system accessory that simplifies how you clean any
+                                countertop of vegetable waste and other debris. Every countertop can be improvised with a
+                                Drawervac and simplify the cleaning process of a modern kitchen.</p>
 
-                            <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p>
+                            <!--        <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p> -->
                         </div>
 
                         <div v-if="toggle && toggleNum == 3" class="pt-10">
-                            <p> Keeping your kitchen cleaner just got a lot easier with
-                                Kickvac – a simple, powerful always available vacuum to suck
-                                away floor sweepings. Conveniently placed in the kitchen,
-                                requires no setup or put away time. Kickvac makes your life
-                                easier by reducing manual cleaning process.</p>
+                            <p> Keeping your kitchen cleaner just got a lot easier with Kickvac – a simple, powerful always
+                                available vacuum to suck away floor sweepings. Conveniently placed in the kitchen, requires
+                                no setup or put away time. Kickvac makes your life easier by reducing manual cleaning
+                                process. simply dispose of your floor sweeping in 3 seconds flat.</p>
 
-                            <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p>
+                            <!--       <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p> -->
                         </div>
 
                         <div v-if="toggle && toggleNum == 4" class="pt-10">
-                            <p> Keeping your kitchen cleaner just got a lot easier with
-                                Kickvac – a simple, powerful always available vacuum to suck
-                                away floor sweepings. Conveniently placed in the kitchen,
-                                requires no setup or put away time. Kickvac makes your life
-                                easier by reducing manual cleaning process.</p>
+                            <p>Speedyvac is an essential, practical and very convienient central vacuum attachment. It's an
+                                innovative auxiliary hose for central vacuum for immediate use. Speedyvac’s design makes
+                                cleaning extremely easy and installation simple, suggested for bathrooms, car garages and
+                                wardrobe areas.</p>
 
-                            <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p>
+                            <!--      <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p> -->
                         </div>
 
                         <div v-if="toggle && toggleNum == 5" class="pt-10">
-                            <p> Keeping your kitchen cleaner just got a lot easier with
-                                Kickvac – a simple, powerful always available vacuum to suck
-                                away floor sweepings. Conveniently placed in the kitchen,
-                                requires no setup or put away time. Kickvac makes your life
-                                easier by reducing manual cleaning process.</p>
+                            <p> No more messy cables lying around in your beautiful homes , no more tripping hazards for
+                                children. With the retractable hose, cleaning up after a party gets done in a Jiffy simply
+                                by pulling out the hose, suck the mess out and let the hose retract automatically.</p>
 
-                            <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p>
+                            <!--         <p class="mt-10">simply dispose of your floor sweeping in 3 seconds flat.</p> -->
                         </div>
 
                     </div>
@@ -118,7 +112,7 @@
     </div>
 
 
-    <div ref="container" class="h-screen w-full lg:hidden relative">
+    <div ref="container" class="h-[70vh] w-full lg:hidden relative">
         <div class="h-full w-full relative">
             <img ref="imgOne" src="@/assets/images/home-static/hero-kickvac.png"
                 class="h-full w-full object-cover absolute top-0" alt="">

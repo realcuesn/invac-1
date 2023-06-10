@@ -42,9 +42,9 @@
 
             <div class="overflow-y-clip block">
                 <div class="translate-y-[100%]" ref="contactUs">
-                    <NuxtLink to="/contact-us" @click="triggerClose"
+                    <a href="tel:+919248009941" to="/contact-us" @click="triggerClose"
                         class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
-                        Contact Us</NuxtLink>
+                        Contact Us</a>
                 </div>
             </div>
         </div>
@@ -57,14 +57,27 @@
             </div>
 
             <div class="flex mt-7 lg:mt-0 items-center gap-x-14 lg:gap-x-8 xl:gap-x-10 2xl:gap-x-14 overflow-y-clip">
-                <img src="@/assets/icons/facebook-gray.svg" ref="facebook"
-                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
-                <img src="@/assets/icons/instagram-gray.svg" ref="instagram"
-                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
-                <img src="@/assets/icons/twitter-gray.svg" ref="twitter"
-                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
-                <img src="@/assets/icons/linkdin-gray.svg" ref="linkdin"
-                    class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                <a href="https://www.facebook.com/Invacindia">
+                    <img src="@/assets/icons/facebook-gray.svg" ref="facebook"
+                        class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                </a>
+
+                <a href="https://instagram.com/invac_india">
+                    <img src="@/assets/icons/instagram-gray.svg" ref="instagram"
+                        class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                </a>
+
+                <a href="https://twitter.com/IndiaInvac">
+                    <img src="@/assets/icons/twitter-gray.svg" ref="twitter"
+                        class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                </a>
+
+
+                <a href="https://www.linkedin.com/company/invac-india/">
+                    <img src="@/assets/icons/linkdin-gray.svg" ref="linkdin"
+                        class="h-8 w-8 lg:h-6 lg:w-6 xl:h-7 xl:w-7 2xl:h-10 translate-y-[100%] 2xl:w-10" alt="" />
+                </a>
+
             </div>
         </div>
     </div>
@@ -110,68 +123,68 @@ onMounted(() => {
 
     gsap.to(closeMenu.value, {
         y: "0%",
-        duration: 1.5,
+        duration: 1,
         delay: 0.8,
     });
 
     gsap.to(closeMenuResponsive.value, {
         y: "0%",
-        duration: 1.5,
+        duration: 1,
         delay: 0.8,
     });
 
     gsap.to(shop.value, {
         y: "0%",
-        duration: 1.5,
+        duration: 1,
         delay: 1.2,
     });
 
     gsap.to(accessories.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 1.5,
+        duration: 1,
+        delay: 1.3,
     });
 
     gsap.to(demo.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 1.9,
+        duration: 1,
+        delay: 1.4,
     });
 
     gsap.to(contactUs.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 2.2,
+        duration: 1,
+        delay: 1.5,
     });
 
     gsap.to(inTouch.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 2.5,
+        duration: 1,
+        delay: 1.6,
     });
 
     gsap.to(facebook.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 2.8,
+        duration: 1,
+        delay: 1.7,
     });
 
     gsap.to(instagram.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 3.1,
+        duration: 1,
+        delay: 1.8,
     });
 
     gsap.to(twitter.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 3.4,
+        duration: 1,
+        delay: 1.9,
     });
 
     gsap.to(linkdin.value, {
         y: "0%",
-        duration: 1.5,
-        delay: 3.7,
+        duration: 1,
+        delay: 2,
     });
 });
 </script>

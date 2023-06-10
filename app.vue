@@ -14,29 +14,21 @@ import Lenis from "@studio-freight/lenis";
 const menuState = useState('menu', () => false)
 gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-    direction: "vertical", // vertical, horizontal
-    gestureDirection: "vertical", // vertical, horizontal, both
-    smooth: true,
-    mouseMultiplier: 1,
-    smoothTouch: false,
-    touchMultiplier: 2,
-    infinite: false,
-  });
+  const lenis = new Lenis()
 
-  //get scroll value
-  lenis.on("scroll", ({ }) => {
-    /*   console.log({ scroll, limit, velocity, direction, progress }); */
-  });
 
   function raf(time: any) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
+    lenis.raf(time)
+    requestAnimationFrame(raf)
   }
 
-  requestAnimationFrame(raf);
+  lenis.on('scroll', ScrollTrigger.update)
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
+  })
+
+  requestAnimationFrame(raf)
 });
 
 </script>
@@ -58,5 +50,27 @@ body {
   width: 100%;
   overflow-x: clip;
   font-family: 'Biennale', 'Biennale Book';
+}
+
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 </style>
