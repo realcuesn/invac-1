@@ -7,7 +7,7 @@
         <div class="flex justify-between items-center">
           <div class="flex gap-x-4 lg:gap-x-3 items-center">
             <p class="text-base lg:text-4xl">Cities We Are At</p>
-            <img src="../assets/arrow-right.svg" class="h-5 lg:h-8 lg:ml-10" alt="" />
+            <img src="../assets/icons/orange-arrow-right.svg" class="h-5 lg:h-8 lg:ml-10" alt="" />
           </div>
   
           <img src="@/assets/logo-white.svg" class="h-5 lg:h-7" alt="" />
