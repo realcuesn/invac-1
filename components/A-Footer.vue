@@ -142,7 +142,8 @@
                         & Cancellation</span> <img src="@/assets/icons/orange-arrow-right.svg" class="h-6" alt="">
                 </NuxtLink>
 
-                <div class="flex items-center gap-x-4 text-neutral-400 translate-y-[100%] footer-anim-pop-wide">
+                <div @click="citiesState = true"
+                    class="flex items-center gap-x-4 text-neutral-400 translate-y-[100%] footer-anim-pop-wide">
                     <span>Cities we are at</span> <img src="@/assets/icons/orange-arrow-right.svg" class="h-6" alt="">
                 </div>
             </div>
@@ -153,7 +154,7 @@
 <script setup lang="ts">
 import gsap from 'gsap';
 //TODO change out collection images to white images no more blm
-
+const citiesState = useState("citiesState");
 onMounted(() => {
     gsap.to('.footer-anim-pop-wide', {
         scrollTrigger: {

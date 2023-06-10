@@ -3,6 +3,7 @@
     <ClientOnly>
       <NuxtPage />
       <A-Menu v-if="menuState" />
+      <A-Cities v-if="citiesState"> </A-Cities>
     </ClientOnly>
   </div>
 </template>
@@ -12,6 +13,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from "@studio-freight/lenis";
 const menuState = useState('menu', () => false)
+const citiesState = useState("citiesState", () => false);
 gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
   const lenis = new Lenis()
