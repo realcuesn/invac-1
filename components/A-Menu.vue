@@ -1,6 +1,6 @@
 <template>
     <div ref="menuContainer"
-        class="h-screen w-full lg:w-[50vw] fixed right-0 top-0 bg-white flex flex-col py-20 px-10 lg:px-16 xl:px-20 justify-between text-black">
+        class="h-screen w-full lg:w-[50vw] fixed z-50 right-0 top-0 bg-white flex flex-col py-20 px-10 lg:px-16 xl:px-20 justify-between text-black">
         <div class="w-full flex lg:h-28"></div>
         <div class="h-full w-full flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-16 2xl:gap-y-20">
             <div class="w-full flex justify-end overflow-y-clip lg:hidden">

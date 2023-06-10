@@ -3,8 +3,8 @@
         <div class="hidden bg-white lg:flex">
             <div class="w-[55%] min-h-screen max-h-screen h-screen sticky top-0">
                 <div class="h-full w-full relative">
-                    <img src="@/assets/products/static/typhoon-d3.png" class="h-full w-full object-cover object-center"
-                        alt="" />
+                    <img src="@/assets/images/home-static/white_background/Typhoon_ProT.jpg"
+                        class="h-full w-full object-cover object-center" alt="" />
                     <div class="h-full w-full absolute top-0 flex flex-col justify-between">
                         <div
                             class="w-full flex items-center justify-between px-10 2xl:px-20 py-10 lg:py-10 xl:py-12 2xl:py-14">
@@ -12,14 +12,14 @@
                                     class="h-5 lg:h-5 xl:h-5 2xl:h-6 transition-opacity duration-500 hover:opacity-75 active:opacity-90"
                                     alt="" /></NuxtLink>
 
-                            <div class="flex items-center text-black">
+                            <a href="tel:+919248009941" class="flex items-center text-black">
                                 <p class="lg:text-xs 2xl:text-base leading-3 2xl:leading-5">
                                     Any Questions?
                                     <span class="block font-semibold">Talk to our experts</span>
                                 </p>
 
                                 <img src="@/assets/icons/support.svg" class="lg:h-8 2xl:h-10 ml-2 2xl:ml-4" alt="" />
-                            </div>
+                            </a>
                         </div>
 
                         <div class="flex flex-col gap-y-10 mr-auto pl-10 2xl:pl-20">
@@ -92,7 +92,7 @@
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
-                                <h2 class="font-semibold lg:text-xs 2xl:text-base">mmh20</h2>
+                                <h2 class="font-semibold lg:text-xs 2xl:text-base">m3/h</h2>
                                 <p class="text-sm 2xl:text-lg">3860</p>
                             </div>
 
@@ -103,7 +103,7 @@
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Decibles</h2>
-                                <p class="text-sm 2xl:text-lg">{{ "58" }}</p>
+                                <p class="text-sm 2xl:text-lg">{{ "<60" }}</p>
                             </div>
                         </div>
 
@@ -120,7 +120,7 @@
 
                             <div class="flex flex-col gap-y-2 items-center">
                                 <h2 class="font-semibold lg:text-xs 2xl:text-base">Capacity</h2>
-                                <p class="text-sm 2xl:text-lg">28</p>
+                                <p class="text-sm 2xl:text-lg">22</p>
                             </div>
 
                             <div class="flex flex-col gap-y-2 items-center">
@@ -152,7 +152,7 @@
         <div class="lg:hidden relative bg-white">
 
             <div class="h-[70vh] w-full">
-                <img src="@/assets/products/static/typhoon-d3.png" class="h-full w-full object-cover" alt="">
+                <img src="@/assets/products/static/typhoon-d2.png" class="h-full w-full object-cover" alt="">
             </div>
             <div class="w-full px-10 pb-10 text-black">
                 <div class="w-full flex items-center justify-center py-14">
@@ -216,21 +216,24 @@
 
 <script setup>
 const menuState = useState("menu");
-const descriptionState = ref(false);
+const descriptionState = ref(true);
+
 definePageMeta({
     scrollToTop: true
 })
 useHead({
-    title: 'Invac - Typhoon D3',
+    title: 'Invac - Typhoon Pro T',
     meta: [
         {
             name: 'description',
-            content: "Bag-less central vacuum with cyclonic action generating powerful & constant suction. These models can also sucks liquids. Powerful typhoon action makes cleaning on any surface a lot more easier."
+            content: "Most powerful machine in the range. Automatically sucks liquids and drains directly to the sewage. Self-flushing system also provides infinite capacity and simple operation. Water injectors turn dust into sludge."
         }
     ]
 })
 const description = ref(
-    "Bag-less central vacuum with cyclonic action generating powerful & constant suction. These models can also sucks liquids. Powerful typhoon action makes cleaning on any surface a lot more easier."
+    `Bag-less central vacuum with cyclonic action generating powerful & constant 
+suction. These models can also suck up liquids. Powerful typhoon action makes 
+cleaning on any surface a lot more easier.`
 );
 const triggerMenu = () => {
     menuState.value = true;

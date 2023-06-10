@@ -15,7 +15,7 @@
             </div>
             <div class="lg:w-[50%] bg-white text-black lg:min-w-[50%] h-full pt-14 pb-10 px-10 lg:px-20 grid">
                 <div class="w-full flex justify-between items-center place-self-start min-h-fit max-h-fit">
-                    <div @click="menuState = true" class="hidden lg:flex cursor-pointer items-center">
+                    <div @click="menuState = true" class="hidden opacity-0 lg:flex cursor-pointer items-center">
                         <span class="tracking-[0.8rem] text-xl block">Products</span>
                         <img src="@/assets/icons/chevron-down.svg" class="h-5 w-5" alt="" />
                     </div>

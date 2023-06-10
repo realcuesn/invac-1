@@ -60,6 +60,12 @@
                                 <h2 class="font-semibold text-sm 2xl:text-lg">D3</h2>
                                 <img src="@/assets/icons/selected.svg" class="h-3 2xl:h-4 opacity-0" alt="" />
                             </NuxtLink>
+
+                            <NuxtLink to="/products/typhoon-prot"
+                                class="py-1.5 px-4 flex border-black border-2 rounded-md items-center gap-x-5">
+                                <h2 class="font-semibold text-sm 2xl:text-lg">Pro T</h2>
+                                <img src="@/assets/icons/selected.svg" class="h-3 2xl:h-4 opacity-0" alt="" />
+                            </NuxtLink>
                         </div>
                     </div>
                 </div>

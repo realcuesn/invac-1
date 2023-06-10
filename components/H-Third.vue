@@ -6,23 +6,8 @@
                 class="flex items-center scroll-stuff-route-grab scroll-stuff gap-x-16 mt-10 lg:pl-[8vw]  xl:pl-[10vw] 2xl:pl-[15vw]">
 
 
-                <div
-                    class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
-                    <NuxtImg src="/images/home-static/white_background/Typhoon_D3.jpg" sizes="sm:950px"
-                        class="h-full w-full object-cover rounded-md absolute" alt="" />
-                    <div
-                        class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
-                        <NuxtImg src="/images/home-static/black_background/Typhoon_D3.png" sizes="sm:950px"
-                            class="h-full w-full object-cover rounded-md" alt="" />
-                        <div
-                            class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
-                            <img src="@/assets/images/home-static/names/typhoon_d3.svg" class="lg:h-14 xl:h-16 2xl:h-20"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
 
-                <div
+                <NuxtLink to="/products/techno-plus-158"
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
                     <NuxtImg src="/images/home-static/white_background/Techno_Plus_158.jpg" sizes="sm:950px"
                         class="h-full w-full object-cover rounded-md absolute" alt="" />
@@ -36,9 +21,9 @@
                                 alt="">
                         </div>
                     </div>
-                </div>
+                </NuxtLink>
 
-                <div
+                <NuxtLink to="/products/techno-plus-230"
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
                     <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_230.jpg"
                         class="h-full w-full object-cover rounded-md absolute" alt="" />
@@ -52,9 +37,10 @@
                                 alt="">
                         </div>
                     </div>
-                </div>
+                </NuxtLink>
 
-                <div
+
+                <NuxtLink to="/products/techno-plus-230"
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
                     <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_230_booster.jpg"
                         class="h-full w-full object-cover rounded-md absolute" alt="" />
@@ -68,9 +54,10 @@
                                 class="lg:h-14 xl:h-16 2xl:h-20" alt="">
                         </div>
                     </div>
-                </div>
+                </NuxtLink>
 
-                <div
+
+                <NuxtLink to="/products/techno-plus-258"
                     class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
                     <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_258.jpg"
                         class="h-full w-full object-cover rounded-md absolute" alt="" />
@@ -84,7 +71,62 @@
                                 alt="">
                         </div>
                     </div>
-                </div>
+                </NuxtLink>
+
+
+
+
+                <NuxtLink to="/products/typhoon-d2"
+                    class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
+                    <NuxtImg src="/images/home-static/white_background/Typhoon_D2.png" sizes="sm:950px"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
+                    <div
+                        class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
+                        <NuxtImg src="/images/home-static/black_background/Typhoon_D2.png" sizes="sm:950px"
+                            class="h-full w-full object-cover rounded-md" alt="" />
+                        <div
+                            class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
+                            <img src="@/assets/images/home-static/names/typhoon-d2.svg" class="lg:h-14 xl:h-16 2xl:h-20"
+                                alt="">
+                        </div>
+                    </div>
+                </NuxtLink>
+
+                <NuxtLink to="/products/typhoon-d3"
+                    class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
+                    <NuxtImg src="/images/home-static/white_background/Typhoon_D3.jpg" sizes="sm:950px"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
+                    <div
+                        class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
+                        <NuxtImg src="/images/home-static/black_background/Typhoon_D3.png" sizes="sm:950px"
+                            class="h-full w-full object-cover rounded-md" alt="" />
+                        <div
+                            class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
+                            <img src="@/assets/images/home-static/names/typhoon_d3.svg" class="lg:h-14 xl:h-16 2xl:h-20"
+                                alt="">
+                        </div>
+                    </div>
+                </NuxtLink>
+
+
+                <NuxtLink to="/products/typhoon-prot"
+                    class="lg:h-[20rem] lg:w-[19rem] lg:min-h-[20rem] lg:min-w-[19rem] xl:h-[24rem] xl:w-[23rem] xl:min-h-[24rem] xl:min-w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] 2xl:min-h-[30rem] 2xl:min-w-[29rem] rounded-md relative overflow-clip third-sec-scroll-item">
+                    <NuxtImg src="/images/home-static/white_background/Typhoon_ProT.jpg" sizes="sm:950px"
+                        class="h-full w-full object-cover rounded-md absolute" alt="" />
+                    <div
+                        class="h-full w-full relative rounded-md opacity-0 hover:opacity-100 transition-all duration-300 t-s-s-i">
+                        <NuxtImg src="/images/home-static/black_background/Typhoon_ProT.png" sizes="sm:950px"
+                            class="h-full w-full object-cover rounded-md" alt="" />
+                        <div
+                            class="lg:h-[20rem] lg:w-[19rem] xl:h-[24rem] xl:w-[23rem] 2xl:h-[30rem] 2xl:w-[29rem] bg-black bg-opacity-50 grid place-content-center top-0 absolute">
+                            <img src="@/assets/images/home-static/names/typhoon-prot.svg" class="lg:h-14 xl:h-16 2xl:h-20"
+                                alt="">
+                        </div>
+                    </div>
+                </NuxtLink>
+
+
+
 
                 <div class="h-[30rem] lg:w-[8vw] lg:min-w-[8vw] xl:w-[10vw] xl:min-w-[10vw] 2xl:w-[15vw] 2xl:min-w-[15vw]">
                 </div>
@@ -99,49 +141,79 @@
         </div>
 
         <div class="flex w-full overflow-x-auto gap-x-8 pl-10 pr-10 scroll-stuff-res">
-            <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
-                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Typhoon_D3.jpg"
-                    class="h-full w-full object-cover rounded-md" alt="" />
-                <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
-                    <img src="@/assets/images/home-static/names/typhoon_d3.svg" class="h-14" alt="">
-                </div>
-            </div>
 
-            <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+
+            <NuxtLink to="/products/techno-plus-158"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
                 <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_158.jpg"
                     class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-158.svg" class="h-14" alt="">
                 </div>
-            </div>
+            </NuxtLink>
 
 
-            <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+            <NuxtLink to="/products/techno-plus-230"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
                 <NuxtImg src="/images/home-static/white_background/Techno_Plus_230.jpg"
                     class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-230.svg" class="h-14" alt="">
                 </div>
-            </div>
+            </NuxtLink>
 
 
-
-            <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+            <NuxtLink to="/products/techno-plus-230"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
                 <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_230_booster.jpg"
                     class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-230-booster.svg" class="h-14" alt="">
                 </div>
-            </div>
+            </NuxtLink>
 
 
-            <div class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+            <NuxtLink to="/products/techno-plus-258"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
                 <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Techno_Plus_258.jpg"
                     class="h-full w-full object-cover rounded-md" alt="" />
                 <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
                     <img src="@/assets/images/home-static/names/techno-258.svg" class="h-14" alt="">
                 </div>
-            </div>
+            </NuxtLink>
+
+
+            <NuxtLink to="/products/typhoon-d2"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Typhoon_D2.png"
+                    class="h-full w-full object-cover rounded-md" alt="" />
+                <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
+                    <img src="@/assets/images/home-static/names/typhoon-d2.svg" class="h-14" alt="">
+                </div>
+            </NuxtLink>
+
+
+            <NuxtLink to="/products/typhoon-d3"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Typhoon_D3.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
+                <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
+                    <img src="@/assets/images/home-static/names/typhoon_d3.svg" class="h-14" alt="">
+                </div>
+            </NuxtLink>
+
+            <NuxtLink to="/products/typhoon-prot"
+                class="h-[90vw] min-h-[90vw] w-[85vw] min-w-[85vw] rounded-md relative overflow-clip">
+                <NuxtImg sizes="sm:950px" src="/images/home-static/white_background/Typhoon_ProT.jpg"
+                    class="h-full w-full object-cover rounded-md" alt="" />
+                <div class="h-full w-full bg-black absolute top-0 bg-opacity-40 grid place-content-center">
+                    <img src="@/assets/images/home-static/names/typhoon-prot.svg" class="h-14" alt="">
+                </div>
+            </NuxtLink>
+
+
+
+
 
         </div>
     </div>
