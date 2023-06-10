@@ -10,14 +10,14 @@
                 curated for you.</p>
         </div>
 
-        <div class="flex w-full px-10 lg:px-20 py-10 mt-10 lg:mt-20">
+      <!--   <div class="flex w-full px-10 lg:px-20 py-10 mt-10 lg:mt-20">
             <div class="flex items-center gap-x-3">
                 <h2 class="text-xl">Filter</h2>
                 <img src="@/assets/icons/chevron-down.svg" class="h-8" alt="">
             </div>
-        </div>
+        </div> -->
 
-        <div class="w-full flex flex-wrap justify-between gap-y-10  gap-x-5 px-10 lg:px-20 mt-10">
+        <div class="w-full flex flex-wrap justify-between gap-y-10  gap-x-5 px-10 lg:px-20 mt-20">
             <NuxtLink to="/accessories/floor-brush-without-wheels-horse-hair" v-if="brushesState"
                 class="w-72 rounded-2xl overflow-clip relative pb-7 bg-[#040707] text-white hover:text-neutral-600 cursor-pointer transition-all duration-700">
                 <div class="w-full">
