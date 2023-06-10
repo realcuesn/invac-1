@@ -170,6 +170,12 @@
                         <h2 class="text-lg sm:text-2xl">D3</h2>
                     </NuxtLink>
 
+
+                    <NuxtLink to="/products/typhoon-prot"
+                        class="py-1.5 px-4 sm:py-2.5 flex gap-x-5 sm:gap-x-7 items-center border-black border-2 rounded-lg">
+                        <h2 class="text-lg sm:text-2xl">ProT</h2>
+                    </NuxtLink>
+
                 </div>
 
                 <div @click="descriptionState = !descriptionState" class="flex gap-x-4 items-center mt-10">

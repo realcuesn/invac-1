@@ -152,7 +152,7 @@
         <div class="lg:hidden relative bg-white">
 
             <div class="h-[70vh] w-full">
-                <img src="@/assets/products/static/typhoon-d2.png" class="h-full w-full object-cover" alt="">
+                <img src="@/assets/images/home-static/white_background/Typhoon_ProT.jpg" class="h-full w-full object-cover" alt="">
             </div>
             <div class="w-full px-10 pb-10 text-black">
                 <div class="w-full flex items-center justify-center py-14">
@@ -168,6 +168,11 @@
                     <NuxtLink to="/products/typhoon-d3"
                         class="py-1.5 px-4 sm:py-2.5 flex gap-x-5 sm:gap-x-7 items-center border-black border-2 rounded-lg">
                         <h2 class="text-lg sm:text-2xl">D3</h2>
+                    </NuxtLink>
+
+                    <NuxtLink to="/products/typhoon-prot"
+                        class="py-1.5 px-4 sm:py-2.5 flex gap-x-5 sm:gap-x-7 items-center border-black border-2 rounded-lg">
+                        <h2 class="text-lg sm:text-2xl">ProT</h2>
                     </NuxtLink>
 
                 </div>
