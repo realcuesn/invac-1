@@ -162,7 +162,7 @@
                     <NuxtImg sizes="sm:600px" src="/products/static/kit/Kit-02.png" class="h-full w-full" alt="" />
                 </div>
 
-                <h2 class="absolute top-10 font-semibold text-2xl right-10">Web <span class="font-medium">Kit</span></h2>
+                <h2 class="absolute top-10 font-semibold text-2xl right-10">Wet <span class="font-medium">Kit</span></h2>
             </div>
 
 

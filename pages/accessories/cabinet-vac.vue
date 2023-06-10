@@ -117,7 +117,7 @@
 const menuState = useState("menu");
 
 const productName = ref('Cabinet Vac')
-const productminiDescription = ref('Without wheels')
+const productminiDescription = ref('')
 const description = ref(`Keeping your kitchen cleaner just got a 
 lot easier with Kickvac – a simple, 
 powerful always available vacuum to 

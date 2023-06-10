@@ -117,7 +117,7 @@
 const menuState = useState("menu");
 
 const productName = ref('Speedy Vac')
-const productminiDescription = ref('Without wheels')
+const productminiDescription = ref('')
 const description = ref(`Speedyvac is an essential, practical 
 and very convienient central 
 vacuum attachment. It's an 

@@ -117,7 +117,7 @@
 const menuState = useState("menu");
 
 const productName = ref('Drawer Vac')
-const productminiDescription = ref('Without wheels')
+const productminiDescription = ref('')
 const description = ref(`Drawervac is a new central vacuum system 
 accessory that simplifies how you clean any 
 countertop of vegetable waste and other debris. 

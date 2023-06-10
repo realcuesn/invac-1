@@ -117,7 +117,7 @@
 const menuState = useState("menu");
 
 const productName = ref('Retra Vac')
-const productminiDescription = ref('Without wheels')
+const productminiDescription = ref('')
 const description = ref(`No more messy cables lying around in
 your beautiful homes , no more tripping 
 hazards for children. With the retractable 
