@@ -134,7 +134,7 @@
                 <div v-else class="px-10 mt-2 2xl:px-20">
                     <div
                         class="border-2 border-black py-10 justify-between flex items-center px-5 2xl:px-10 2xl:py-12 mt-20 rounded-xl">
-                        <h3 class="text-sm 2xl:text-lg">₹248,505.00 – ₹298,999.00</h3>
+                        <h3 class="text-sm 2xl:text-lg">₹2,10,000 - ₹22,2,0000</h3>
                         <div class="flex items-center gap-x-5">
                             <h3 class="text-base font-semibold 2xl:text-xl">Get A quote</h3>
                             <img src="@/assets/icons/orange-arrow-right.svg" class="h-5 2xl:h-7" alt="" />
@@ -197,7 +197,7 @@
                     </div>
 
                     <div class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
-                        <h2 class="text-xs font-semibold">₹248,505.00 – ₹298,999.00</h2>
+                        <h2 class="text-xs font-semibold">₹2,10,000 - ₹22,2,0000</h2>
 
                         <button class="flex items-center gap-x-3">
                             <h3 class="text-[0.65rem]">Get A quote</h3>

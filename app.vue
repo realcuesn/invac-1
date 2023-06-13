@@ -12,8 +12,10 @@
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from "@studio-freight/lenis";
+import 'vue3-lottie/dist/style.css'
 const menuState = useState('menu', () => false)
 const citiesState = useState("citiesState", () => false);
+const quizState = useState("quizState", () => 1);
 gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
   const lenis = new Lenis()
