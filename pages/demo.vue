@@ -53,26 +53,51 @@
                         </div>
                     </div>
 
-                    <input type="name" class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
-                        placeholder="Type of home" />
+                    <div class="lg:w-full pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
+                        <select name="model" id="model" class="w-full outline-none">
+                            <option value="size of home">Type of home</option>
+                            <option value="apartment">Aparatment</option>
+                            <option value="independent-house">Independent Home</option>
+                        </select>
+                        <label for="model">
+                            <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
+                        </label>
+
+                    </div>
 
 
                     <div class="lg:flex justify-between">
                         <div class="lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <select name="Model" id="model" class="w-full outline-none">
+                            <select name="model" id="model" class="w-full outline-none">
                                 <option value="size of home">Size of home</option>
+                                <option value="2000-sft"> {{ '< 2000 Sft Built Up Area' }} </option>
+                                <option value="2000-3000-sft"> {{ '2000 - 3000 Sft Built Up Area' }} </option>
+                                <option value="3000-5000-sft"> {{ '3000 - 5000 Sft Built Up Area' }} </option>
+                                <option value="5000-10000-sft"> {{ '5000 - 10000 Sft Built Up Area' }} </option>
+                                <option value="10000-sft"> {{ '> 10000 Sft Built Up Area' }} </option>
                             </select>
-                            <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
+                            <label for="model">
+                                <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
+                            </label>
+
                         </div>
 
-                        <div
-                            class="mt-12 lg:mt-0 lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <input type="text" placeholder="Current Stage" class="w-full outline-none" />
+                        <div class="lg:w-[45%] mt-12 lg:mt-0 pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
+                            <select name="model" id="model" class="w-full outline-none">
+                                <option value="size of home">Current Stage</option>
+                                <option value="under-construction">Under Construction</option>
+                                <option value="interior-under-construction">Interior Under Construction</option>
+                                <option value="fully-constructed">Fully Constructed</option>
+                            </select>
+                            <label for="model">
+                                <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
+                            </label>
+
                         </div>
                     </div>
                     <div class="flex ml-auto w-fit my-2 lg:my-14">
-                        <span class="text-4xl tracking-[0.6rem] opacity-70">Send</span><img src="@/assets/icons/orange-arrow-right.svg"
-                            class="h-10 ml-3" alt="" />
+                        <span class="text-4xl tracking-[0.6rem] opacity-70">Send</span><img
+                            src="@/assets/icons/orange-arrow-right.svg" class="h-10 ml-3" alt="" />
                     </div>
                 </div>
             </div>

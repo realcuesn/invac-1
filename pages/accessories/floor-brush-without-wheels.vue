@@ -60,7 +60,7 @@
                     <p class="text-xs mt-2 2xl:text-sm">{{ description }}</p>
                     <div
                         class="border-2 border-black py-10 justify-between flex items-center px-5 2xl:px-10 2xl:py-12 mt-20 rounded-xl">
-                        <h3 class="text-sm 2xl:text-lg">NA</h3>
+                        <h3 class="text-sm 2xl:text-lg"></h3>
                         <div class="flex items-center gap-x-5">
                             <h3 class="text-base font-semibold 2xl:text-xl">Buy Now</h3>
                             <img src="@/assets/icons/orange-arrow-right.svg" class="h-5 2xl:h-7" alt="" />
