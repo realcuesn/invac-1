@@ -1,8 +1,8 @@
 <template>
     <div ref="menuContainer"
         class="h-screen w-full lg:w-[50vw] fixed z-50 right-0 top-0 bg-white flex flex-col py-20 px-10 lg:px-16 xl:px-20 justify-between text-black">
-        <div class="w-full flex lg:h-28"></div>
-        <div class="h-full w-full flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-16 2xl:gap-y-20">
+        <div class="w-full flex lg:h-28 2xl:h-10"></div>
+        <div class="h-full w-full flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-16 2xl:gap-y-16">
             <div class="w-full flex justify-end overflow-y-clip lg:hidden">
                 <img @click="triggerClose" src="@/assets/icons/x.svg" ref="closeMenuResponsive"
                     class="h-12 hover:opacity-40 translate-y-[100%] active:opacity-90 cursor-pointer transition-opacity duration-500"
@@ -12,7 +12,7 @@
                 <div class="overflow-y-clip block">
                     <div class="translate-y-[100%]" ref="shop">
                         <NuxtLink to="/shop-category" @click="triggerClose"
-                            class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                            class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
                             Shop</NuxtLink>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
             <div class="overflow-y-clip block">
                 <div class="translate-y-[100%]" ref="accessories">
                     <NuxtLink to="/accessories" @click="triggerClose"
-                        class=" text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                        class=" text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
                         Accessories</NuxtLink>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             <div class="overflow-y-clip block">
                 <div class="translate-y-[100%]" ref="demo">
                     <NuxtLink to="/demo" @click="triggerClose"
-                        class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                        class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
                         Book A Demo</NuxtLink>
                 </div>
             </div>
@@ -43,7 +43,7 @@
             <div class="overflow-y-clip block">
                 <div class="translate-y-[100%]" ref="contactUs">
                     <a href="tel:+919248009941" to="/contact-us" @click="triggerClose"
-                        class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
+                        class="text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl block w-fit font-normal border-[#f47921] transition-all duration-500 cursor-pointer active:opacity-70 hover:border-b-4 pb-3">
                         Contact Us</a>
                 </div>
             </div>

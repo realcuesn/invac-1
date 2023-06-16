@@ -10,8 +10,6 @@
                     alt="" />
             </div>
 
-
-
             <div ref="imageThree" class="absolute h-full w-full top-0">
                 <NuxtImg format="webp" src="/images/home-static/cabinet-vac.jpg" class="h-full w-full object-cover"
                     alt="" />
@@ -21,7 +19,6 @@
                 <NuxtImg format="webp" src="/images/home-static/speedy-vac.jpeg" class="h-full w-full object-cover"
                     alt="" />
             </div>
-
 
             <div ref="imageFive" class="absolute h-full w-full top-0">
                 <NuxtImg format="webp" src="/images/home-static/retra-vac.jpeg" class="h-full w-full object-cover "
