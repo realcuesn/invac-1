@@ -18,12 +18,14 @@
             </div>
 
             <div ref="imageFour" class="absolute h-full w-full top-0">
-                <NuxtImg format="webp" src="/images/home-static/speedy-vac.jpeg" class="h-full w-full object-cover" alt="" />
+                <NuxtImg format="webp" src="/images/home-static/speedy-vac.jpeg" class="h-full w-full object-cover"
+                    alt="" />
             </div>
 
 
             <div ref="imageFive" class="absolute h-full w-full top-0">
-                <NuxtImg format="webp" src="/images/home-static/retra-vac.jpeg" class="h-full w-full object-cover " alt="" />
+                <NuxtImg format="webp" src="/images/home-static/retra-vac.jpeg" class="h-full w-full object-cover "
+                    alt="" />
             </div>
 
 
@@ -390,10 +392,7 @@ onMounted(() => {
         }
     }
 
-    container.value.addEventListener('touchstart', (e) => {
-        e.preventDefault()
-        handleTouchStart(e)
-    });
+    container.value.addEventListener('touchstart', handleTouchStart);
     container.value.addEventListener('touchend', handleTouchEnd);
 })
 
@@ -414,4 +413,5 @@ onMounted(() => {
     100% {
         width: 3.5rem;
     }
-}</style>
+}
+</style>
