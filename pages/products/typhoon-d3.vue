@@ -48,7 +48,7 @@
                         <h5 class="text-[0.65rem] font-semibold 2xl:text-sm">
                             Pick a model
                         </h5>
-                        <div class="flex gap-x-4 mt-3 pb-4">
+                        <div class="grid grid-cols-2 gap-y-4 flex-wrap gap-x-4 mt-3 pb-4">
                             <NuxtLink to="/products/typhoon-d2"
                                 class="py-1.5 px-4 flex border-black border-2 rounded-md items-center gap-x-5">
                                 <h2 class="font-semibold text-sm 2xl:text-lg">D2</h2>
@@ -63,7 +63,13 @@
 
                             <NuxtLink to="/products/typhoon-prot"
                                 class="py-1.5 px-4 flex border-black border-2 rounded-md items-center gap-x-5">
-                                <h2 class="font-semibold text-sm 2xl:text-lg">Pro T</h2>
+                                <h2 class="font-semibold text-sm 2xl:text-lg">158</h2>
+                                <img src="@/assets/icons/selected.svg" class="h-3 2xl:h-4 opacity-0" alt="" />
+                            </NuxtLink>
+
+                            <NuxtLink to="/products/typhoon-prot-230"
+                                class="py-1.5 px-4 flex border-black border-2 rounded-md items-center gap-x-5">
+                                <h2 class="font-semibold text-sm 2xl:text-lg">230</h2>
                                 <img src="@/assets/icons/selected.svg" class="h-3 2xl:h-4 opacity-0" alt="" />
                             </NuxtLink>
                         </div>
@@ -170,10 +176,14 @@
                         <h2 class="text-lg sm:text-2xl">D3</h2>
                     </NuxtLink>
 
-
                     <NuxtLink to="/products/typhoon-prot"
                         class="py-1.5 px-4 sm:py-2.5 flex gap-x-5 sm:gap-x-7 items-center border-black border-2 rounded-lg">
-                        <h2 class="text-lg sm:text-2xl">ProT</h2>
+                        <h2 class="text-lg sm:text-2xl">158</h2>
+                    </NuxtLink>
+
+                    <NuxtLink to="/products/typhoon-prot-230"
+                        class="py-1.5 px-4 sm:py-2.5 flex gap-x-5 sm:gap-x-7 items-center border-black border-2 rounded-lg">
+                        <h2 class="text-lg sm:text-2xl">230</h2>
                     </NuxtLink>
 
                 </div>

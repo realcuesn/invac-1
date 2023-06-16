@@ -239,7 +239,7 @@ definePageMeta({
     scrollToTop: true
 })
 useHead({
-    title: 'Invac - Typhoon Pro T',
+    title: 'Invac - Typhoon Pro T 230',
     meta: [
         {
             name: 'description',

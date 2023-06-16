@@ -12,7 +12,7 @@
                 Terms Of Service
             </h2>
 
-            <div class="w-full bg-white text-black mt-20 p-20">
+            <div class="w-full bg-white text-black mt-20 p-10 lg:p-20">
                 <div class="w-full border-2 border-black px-7 pr-20 py-10 flex flex-col gap-y-5">
                     <div class="w-full grid grid-cols-3 items-center pb-5 border-b border-black">
                         <span class="block mx-4">1</span>
