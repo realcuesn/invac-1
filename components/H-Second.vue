@@ -12,7 +12,7 @@
                         class="lg:w-28 xl:w-32 2xl:w-48 slide-up-second translate-y-[1000%] ml-5 h-0.5 bg-white lg:mt-4 xl:mt-5 2xl:mt-10">
                     </div>
                     <NuxtLink to="/demo"
-                        class=" lg:text-xs slide-up-second translate-y-[150%] xl:text-xs 2xl:text-base lg:ml-6 xl:ml-10 border-2 lg:px-5 xl:px-12 py-3 tracking-[0.4rem] rounded-xl hover:bg-[#d86d21] active:opacity-70 transition-colors duration-500 border-[#d86d21]">
+                        class=" lg:text-xs slide-up-second translate-y-[150%] whitespace-nowrap xl:text-xs 2xl:text-base lg:ml-6 xl:ml-10 border-2 lg:px-5 xl:px-12 py-3 tracking-[0.4rem] rounded-xl hover:bg-[#d86d21] active:opacity-70 transition-colors duration-500 border-[#d86d21]">
                         Book
                         A
                         Demo</NuxtLink>
@@ -20,8 +20,8 @@
             </div>
 
             <div>
-                <h4 class="font-light text-neutral-400 mt-24 xl:text-base 2xl:text-lg">Product <span
-                        class="font-semibold ml-1">Features</span> </h4>
+                <p class="font-light text-neutral-400 mt-24 xl:text-base 2xl:text-lg">Product <span
+                        class="font-semibold ml-1">Features</span> </p>
                 <div class="flex gap-x-20 lg:mt-12 xl:mt-14 2xl:mt-16 overflow-y-clip">
                     <div ref="secOne" class="flex flex-col items-center gap-y-14">
                         <img src="@/assets/icons/fully-auto.svg"
@@ -52,7 +52,8 @@
             </div>
         </div>
         <div class="w-[40%] h-full grid place-content-center">
-            <img src="@/assets/images/home-static/second-section.png" class="h-[80%] w-fit mt-[20%]" alt="">
+            <NuxtImg format="webp" src="/images/home-static/second-section.png" class="h-[80%] w-fit mt-[20%]"
+                alt="" />
         </div>
 
     </div>
@@ -92,7 +93,7 @@
             </div>
         </div>
         <div class="h-full w-[50%] min-w-[50%] py-20 grid place-content-center">
-            <img src="@/assets/images/home-static/second-section.png" class="w-full sm:h-96" alt="">
+            <NuxtImg format="webp" src="/images/home-static/second-section.png" class="w-full sm:h-96" alt="" />
         </div>
     </div>
 </template>

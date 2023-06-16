@@ -57,9 +57,9 @@
 
         <div class="w-full lg:grid lg:grid-cols-2 mt-20">
             <div>
-                <h4 class="text-2xl font-semibold footer-anim-pop-wide">
+                <div class="text-2xl font-semibold footer-anim-pop-wide">
                     <div class="translate-y-[100%] footer-anim-pop-wide"></div>
-                </h4>
+                </div>
                 <div class="text-lg mt-10">
                     <div class="overflow-y-clip">
                         <div class="translate-y-[100%] footer-anim-pop-wide"> Invac India,</div>

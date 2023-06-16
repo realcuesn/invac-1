@@ -57,7 +57,7 @@
         </div>
 
         <div class=" w-full lg:w-[45%] grid place-content-center h-full pt-14 lg:py-0">
-            <button type="submit" class="overflow-y-clip">
+            <button aria-label="submit" type="submit" class="overflow-y-clip">
                 <img ref="arrowRight" src="@/assets/icons/orange-arrow-right.svg" class="h-12 lg:h-24 translate-y-[100%]"
                     alt="">
             </button>

@@ -1,16 +1,32 @@
 <template>
     <div class="h-screen w-full relative hidden lg:block">
         <div class="h-full w-full relative">
-            <img ref="imageOne" src="@/assets/images/home-static/kick-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageTwo" src="@/assets/images/home-static/drawer-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageThree" src="@/assets/images/home-static/cabinet-vac.jpg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageFour" src="@/assets/images/home-static/speedy-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageFive" src="@/assets/images/home-static/retra-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
+            <div ref="imageOne" class="absolute h-full w-full top-0">
+                <NuxtImg format="webp" src="/images/home-static/kick-vac.jpeg" class="h-full w-full object-cover" alt="" />
+            </div>
+
+            <div ref="imageTwo" class="absolute h-full w-full top-0">
+                <NuxtImg format="webp" src="/images/home-static/drawer-vac.jpeg" class="h-full w-full object-cover "
+                    alt="" />
+            </div>
+
+
+
+            <div ref="imageThree" class="absolute h-full w-full top-0">
+                <NuxtImg format="webp" src="/images/home-static/cabinet-vac.jpg" class="h-full w-full object-cover"
+                    alt="" />
+            </div>
+
+            <div ref="imageFour" class="absolute h-full w-full top-0">
+                <NuxtImg format="webp" src="/images/home-static/speedy-vac.jpeg" class="h-full w-full object-cover" alt="" />
+            </div>
+
+
+            <div ref="imageFive" class="absolute h-full w-full top-0">
+                <NuxtImg format="webp" src="/images/home-static/retra-vac.jpeg" class="h-full w-full object-cover " alt="" />
+            </div>
+
+
         </div>
         <div class="absolute h-full w-full top-0 bg-black bg-opacity-20 flex px-20">
             <div class="h-full w-[60%] flex flex-col justify-between py-28">
@@ -114,16 +130,40 @@
 
     <div ref="container" class="h-[70vh] w-full lg:hidden relative">
         <div class="h-full w-full relative">
-            <img ref="imgOne" src="@/assets/images/home-static/kick-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgTwo" src="@/assets/images/home-static/drawer-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgThree" src="@/assets/images/home-static/cabinet-vac.jpg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgFour" src="@/assets/images/home-static/speedy-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgFive" src="@/assets/images/home-static/retra-vac.jpeg"
-                class="h-full w-full object-cover absolute top-0" alt="">
+            <div ref="imgOne" class="h-full w-full absolute top-0">
+                <NuxtImg format="webp" src="/images/home-static/kick-vac.jpeg" class="h-full w-full object-cover " alt="" />
+            </div>
+
+
+
+            <div ref="imgTwo" class="h-full w-full absolute top-0">
+                <NuxtImg format="webp" src="/images/home-static/drawer-vac.jpeg" class="h-full w-full object-cover"
+                    alt="" />
+            </div>
+
+
+
+            <div ref="imgThree" class="h-full w-full absolute top-0">
+                <NuxtImg format="webp" src="/images/home-static/cabinet-vac.jpg" class="h-full w-full object-cover"
+                    alt="" />
+            </div>
+
+
+
+
+            <div ref="imgFour" class="h-full w-full absolute top-0">
+                <NuxtImg format="webp" src="/images/home-static/speedy-vac.jpeg" class="h-full w-full object-cover "
+                    alt="" />
+            </div>
+
+
+            <div ref="imgFive" class="h-full w-full absolute top-0">
+                <NuxtImg format="webp" src="/images/home-static/retra-vac.jpeg" class="h-full w-full object-cover" alt="" />
+            </div>
+
+
+
+
         </div>
 
         <div
@@ -350,7 +390,10 @@ onMounted(() => {
         }
     }
 
-    container.value.addEventListener('touchstart', handleTouchStart);
+    container.value.addEventListener('touchstart', (e) => {
+        e.preventDefault()
+        handleTouchStart(e)
+    });
     container.value.addEventListener('touchend', handleTouchEnd);
 })
 
@@ -371,5 +414,4 @@ onMounted(() => {
     100% {
         width: 3.5rem;
     }
-}
-</style>
+}</style>

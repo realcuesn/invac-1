@@ -12,6 +12,7 @@
     "@nuxt/devtools": "^0.4.2",
     "@nuxt/image-edge": "^1.0.0-28089462.3520a62",
     "@types/node": "^18",
+    "@vite-pwa/nuxt": "^0.1.0",
     "@vueuse/core": "^10.1.0",
     "@vueuse/nuxt": "^10.1.0",
     "autoprefixer": "^10.4.14",
