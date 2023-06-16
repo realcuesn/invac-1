@@ -15,7 +15,7 @@
                 <input required placeholder="Phone"
                     class="pb-2 w-full flex text-lg lg:text-2xl 2xl:text-3xl outline-none bg-transparent placeholder:text-neutral-500 justify-between border-b-2 border-neutral-500" />
                 <input required placeholder="City"
-                    class="pb-2 w-full flex text-lg lg:text-2xl 2xl:text-3xl outline-none bg-transparent placeholder:text-neutral-500 justify-between border-b-2 border-neutral-500" />
+                    class="pb-2 w-full flex text-lg mt-7 lg:mt-0 lg:text-2xl 2xl:text-3xl outline-none bg-transparent placeholder:text-neutral-500 justify-between border-b-2 border-neutral-500" />
             </div>
 
             <input required placeholder="Email" type="email"
