@@ -1,15 +1,15 @@
 <template>
     <div class="h-screen w-full relative hidden lg:block">
         <div class="h-full w-full relative">
-            <img ref="imageOne" src="@/assets/images/home-static/hero-kickvac.png"
+            <img ref="imageOne" src="@/assets/images/home-static/kick-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageTwo" src="@/assets/images/home-static/drawer-vac.png"
+            <img ref="imageTwo" src="@/assets/images/home-static/drawer-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageThree" src="@/assets/images/home-static/cabinet-vac.png"
+            <img ref="imageThree" src="@/assets/images/home-static/cabinet-vac.jpg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageFour" src="@/assets/images/home-static/speedy-vac.png"
+            <img ref="imageFour" src="@/assets/images/home-static/speedy-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imageFive" src="@/assets/images/home-static/retra-vac.png"
+            <img ref="imageFive" src="@/assets/images/home-static/retra-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
         </div>
         <div class="absolute h-full w-full top-0 bg-black bg-opacity-20 flex px-20">
@@ -17,35 +17,35 @@
                 <h2 class="text-2xl">Product <span class="font-semibold">Accessories</span> </h2>
 
                 <div class="flex flex-col gap-y-6">
-                    <div @mouseover="triggerHover(1)"
+                    <NuxtLink to="/accessories/kick-vac" @mouseover="triggerHover(1)"
                         class="flex items-center text-xl w-fit fourth-item-one cursor-pointer opacity-40 hover:opacity-100">
                         <p class="h-0.5  bg-white"></p>
-                        <h2 class="ml-5">Kickvac</h2>
-                    </div>
+                        <h2 class="ml-5">Kick Vac</h2>
+                    </NuxtLink>
 
-                    <div @mouseover="triggerHover(2)"
+                    <NuxtLink to="/accessories/drawer-vac" @mouseover="triggerHover(2)"
                         class="flex items-center text-xl w-fit fourth-item-two cursor-pointer opacity-40 hover:opacity-100">
                         <p class="h-0.5  bg-white"></p>
-                        <h2 class="ml-5">Drawervac</h2>
-                    </div>
+                        <h2 class="ml-5">Drawer Vac</h2>
+                    </NuxtLink>
 
-                    <div @mouseover="triggerHover(3)"
+                    <NuxtLink to="/accessories/cabinet-vac" @mouseover="triggerHover(3)"
                         class="flex items-center text-xl w-fit fourth-item-three cursor-pointer opacity-40 hover:opacity-100">
                         <p class="h-0.5  bg-white"></p>
-                        <h2 class="ml-5">Cabinetvac</h2>
-                    </div>
+                        <h2 class="ml-5">Cabinet Vac</h2>
+                    </NuxtLink>
 
-                    <div @mouseover="triggerHover(4)"
+                    <NuxtLink to="/accessories/speedy-vac" @mouseover="triggerHover(4)"
                         class="flex items-center text-xl w-fit fourth-item-four cursor-pointer opacity-40 hover:opacity-100">
                         <p class="h-0.5  bg-white"></p>
-                        <h2 class="ml-5">Speedyvac</h2>
-                    </div>
+                        <h2 class="ml-5">Speedy Vac</h2>
+                    </NuxtLink>
 
-                    <div @mouseover="triggerHover(5)"
+                    <NuxtLink to="/accessories/retra-vac" @mouseover="triggerHover(5)"
                         class="flex items-center text-xl w-fit fourth-item-five cursor-pointer opacity-40 hover:opacity-100">
                         <p class="h-0.5  bg-white"></p>
-                        <h2 class="ml-5">Retrovac</h2>
-                    </div>
+                        <h2 class="ml-5">Retra Vac</h2>
+                    </NuxtLink>
                 </div>
             </div>
 
@@ -114,15 +114,15 @@
 
     <div ref="container" class="h-[70vh] w-full lg:hidden relative">
         <div class="h-full w-full relative">
-            <img ref="imgOne" src="@/assets/images/home-static/hero-kickvac.png"
+            <img ref="imgOne" src="@/assets/images/home-static/kick-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgTwo" src="@/assets/images/home-static/drawer-vac.png"
+            <img ref="imgTwo" src="@/assets/images/home-static/drawer-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgThree" src="@/assets/images/home-static/cabinet-vac.png"
+            <img ref="imgThree" src="@/assets/images/home-static/cabinet-vac.jpg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgFour" src="@/assets/images/home-static/speedy-vac.png"
+            <img ref="imgFour" src="@/assets/images/home-static/speedy-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
-            <img ref="imgFive" src="@/assets/images/home-static/retra-vac.png"
+            <img ref="imgFive" src="@/assets/images/home-static/retra-vac.jpeg"
                 class="h-full w-full object-cover absolute top-0" alt="">
         </div>
 

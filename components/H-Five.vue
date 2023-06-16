@@ -3,7 +3,7 @@
 
         <div class="w-full py-10 lg:hidden overflow-x-clip px-10">
             <div class="w-96 sm:w-full translate-x-[30vw]">
-                <Vue3Lottie class="h-full w-full sm:scale-125 [transform:rotateY(-15deg)]" :speed="0.2" :direction="`alternate`"
+                <Vue3Lottie class="h-full w-full sm:scale-125 [transform:rotateY(-15deg)]" :speed="0.8" :direction="`alternate`"
                     :animationData="HomeJSON" />
             </div>
 
@@ -37,7 +37,7 @@
                 </NuxtLink>
             </div>
             <div @scroll.prevent class="h-full w-[60%] flex items-center justify-end overflow-clip">
-                <Vue3Lottie class="w-[40rem] [transform:rotateY(-15deg)]" :speed="0.2" :direction="`alternate`"
+                <Vue3Lottie class="w-[40rem] [transform:rotateY(-15deg)]" :speed="0.8" :direction="`alternate`"
                     :animationData="HomeJSON" />
             </div>
         </div>
