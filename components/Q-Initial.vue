@@ -15,7 +15,7 @@
 
             <div class="lg:flex mt-7 lg:mt-16 justify-between gap-x-16">
                 <div
-                    class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
+                    class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
                     <select v-model="sizeState" @click="triggerSize" required name="Model" id="model"
                         class="w-full outline-none bg-transparent">
                         <option v-if="triggerSizeSelect" value="default-state">Size of Home</option>
@@ -29,7 +29,7 @@
                     <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
                 </div>
                 <div
-                    class="pb-2 flex mt-7 text-lg lg:text-2xl 2xl:text-3xl justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
+                    class="pb-2 2xl:pb-5 flex mt-7 text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
                     <select v-model="currentType" @click="triggerCurrentStage" required name="Model" id="model"
                         class="w-full outline-none bg-transparent">
                         <option v-if="triggerCurrentStageState" value="default-state">Current Stage</option>
@@ -43,7 +43,7 @@
             </div>
 
             <div
-                class="pb-2 mt-7 lg:mt-16 flex text-lg lg:text-2xl 2xl:text-3xl justify-between text-neutral-500 border-b-2 border-neutral-500">
+                class="pb-2 mt-7 lg:mt-16 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 border-neutral-500">
                 <select v-model="maintenanceType" @click="triggerMaintenanceSelect" required name="Model" id="model"
                     placeholder="Maintiance" class="w-full outline-none bg-transparent">
                     <option v-if="triggerMaintenanceSelectState" value="default-state">Maintenace</option>
@@ -57,7 +57,7 @@
         </div>
 
         <div class=" w-full lg:w-[45%] grid place-content-center h-full pt-14 lg:py-0">
-            <button aria-label="submit" type="submit" class="overflow-y-clip">
+            <button aria-label="submit" type="submit" class="overflow-y-clip hover:ml-12 block transition-all duration-700">
                 <img ref="arrowRight" src="@/assets/icons/orange-arrow-right.svg" class="h-12 lg:h-24 translate-y-[100%]"
                     alt="">
             </button>

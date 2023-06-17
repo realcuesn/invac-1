@@ -11,7 +11,7 @@
                 <div>
                     <div class="overflow-y-hidden">
                         <h3 ref="cleaningMadeEasy"
-                            class="font-bold translate-y-[100%] lg:font-bold xl:font-bold 2xl:font-bold"><span
+                            class="font-bold pb-1.5 2xl:pb-2 translate-y-[100%] lg:font-bold xl:font-bold 2xl:font-bold"><span
                                 class="font-light">Cleaning</span>
                             Made Easy</h3>
                     </div>
