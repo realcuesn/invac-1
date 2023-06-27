@@ -42,7 +42,7 @@ const router = useRouter()
 
 const triggerSubmit = () => {
     const quizObj = JSON.parse(localStorage.getItem('quiz'))
-
+    console.log(quizObj.maintenanceType)
 
     if (quizObj.maintenanceType == 'manual') {
         if (quizObj.sizeState == '2000-sft' || quizObj.sizeState == '2000-3000-sft' || quizObj.sizeState == '3000-5000-sft') {
@@ -59,7 +59,7 @@ const triggerSubmit = () => {
                 router.push('/products/typhoon-prot-230')
             }
         }
-    } else {
+    } else if (quizObj.maintenanceType == 'fully-auto') {
         if (quizObj.sizeState == '2000-sft' || quizObj.sizeState == '2000-3000-sft' || quizObj.sizeState == '3000-5000-sft') {
             if (quizObj.sizeState == '3000-5000-sft') {
                 router.push('/products/techno-plus-158')

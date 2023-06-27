@@ -88,9 +88,9 @@ const triggerSubmit = () => {
         typeState: typeState.value,
         sizeState: sizeState.value,
         currentType: typeState.value,
-        maintenanceType: typeState.value
+        maintenanceType: maintenanceType.value
     }
-
+    console.log(quizOptions)
     localStorage.setItem('quiz', JSON.stringify(quizOptions))
     quizState.value = 2
 
