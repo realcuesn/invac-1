@@ -56,7 +56,7 @@ const triggerSubmit = () => {
                 router.push('/products/typhoon-prot')
             } else {
                 //TODO add prot 230 logic here
-                router.push('/products/typhoon-prot')
+                router.push('/products/typhoon-prot-230')
             }
         }
     } else {

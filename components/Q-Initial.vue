@@ -6,7 +6,7 @@
                 class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl justify-between text-neutral-500 border-b-2 border-neutral-500">
                 <select v-model="typeState" @click="triggerHoseSelect" required name="Model" id="model"
                     class="w-full outline-none bg-transparent">
-                    <option v-if="triggerHoseSelectState" value="default-state">Type of Home</option>
+                    <option value="default-state">Type of Home</option>
                     <option value="apartment">Aparatment</option>
                     <option value="independent-house">Independent Home</option>
                 </select>
@@ -18,7 +18,7 @@
                     class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
                     <select v-model="sizeState" @click="triggerSize" required name="Model" id="model"
                         class="w-full outline-none bg-transparent">
-                        <option v-if="triggerSizeSelect" value="default-state">Size of Home</option>
+                        <option value="default-state">Size of Home</option>
                         <option value="2000-sft"> {{ '< 2000 Sft Built Up Area' }} </option>
                         <option value="2000-3000-sft"> {{ '2000 - 3000 Sft Built Up Area' }} </option>
                         <option value="3000-5000-sft"> {{ '3000 - 5000 Sft Built Up Area' }} </option>
@@ -32,7 +32,7 @@
                     class="pb-2 2xl:pb-5 flex mt-7 text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
                     <select v-model="currentType" @click="triggerCurrentStage" required name="Model" id="model"
                         class="w-full outline-none bg-transparent">
-                        <option v-if="triggerCurrentStageState" value="default-state">Current Stage</option>
+                        <option value="default-state">Current Stage</option>
                         <option value="under-construction">Under Construction</option>
                         <option value="interior-under-construction">Interior Under Construction</option>
                         <option value="fully-constructed">Fully Constructed</option>
@@ -46,7 +46,7 @@
                 class="pb-2 mt-7 lg:mt-16 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 border-neutral-500">
                 <select v-model="maintenanceType" @click="triggerMaintenanceSelect" required name="Model" id="model"
                     placeholder="Maintiance" class="w-full outline-none bg-transparent">
-                    <option v-if="triggerMaintenanceSelectState" value="default-state">Maintenace</option>
+                    <option value="default-state">Maintenace</option>
                     <option value="manual">Manual</option>
                     <option value="fully-auto">Fully Auto</option>
                 </select>
