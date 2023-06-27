@@ -248,7 +248,7 @@ const swipeHandler = (direction) => {
 
     if (count.value == 2) {
         name.value = "Drawervac";
-        description.value = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+        description.value = `Drawervac is a new central vacuum system accessory that simplifies how you clean any countertop of vegetable waste and other debris. Every countertop can be improvised with a Drawervac and simplify the cleaning process of a modern kitchen.`
         gsap.to(imgOne.value, { opacity: 0, duration: 0.3 })
         gsap.to(imgTwo.value, { opacity: 1, duration: 0.3 })
         gsap.to(imgThree.value, { opacity: 0, duration: 0.3 })
@@ -268,7 +268,10 @@ const swipeHandler = (direction) => {
 
     if (count.value == 4) {
         name.value = "Speedyvac";
-        description.value = "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+        description.value = `Speedyvac is an essential, practical and very convienient central vacuum attachment. It's an
+                                innovative auxiliary hose for central vacuum for immediate use. Speedyvac’s design makes
+                                cleaning extremely easy and installation simple, suggested for bathrooms, car garages and
+                                wardrobe areas.`
         gsap.to(imgOne.value, { opacity: 0, duration: 0.3 })
         gsap.to(imgTwo.value, { opacity: 0, duration: 0.3 })
         gsap.to(imgThree.value, { opacity: 0, duration: 0.3 })
@@ -280,7 +283,9 @@ const swipeHandler = (direction) => {
 
     if (count.value == 5) {
         name.value = "Retrovac";
-        description.value = "lorem asd dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
+        description.value = `No more messy cables lying around in your beautiful homes , no more tripping hazards for
+                                children. With the retractable hose, cleaning up after a party gets done in a Jiffy simply
+                                by pulling out the hose, suck the mess out and let the hose retract automatically.`
         gsap.to(imgOne.value, { opacity: 0, duration: 0.3 })
         gsap.to(imgTwo.value, { opacity: 0, duration: 0.3 })
         gsap.to(imgThree.value, { opacity: 0, duration: 0.3 })
