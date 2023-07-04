@@ -26,21 +26,23 @@
                 </div>
 
                 <div class="place-self-end w-full flex flex-col gap-y-14">
-                    <input type="text" class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
+                    <input v-model="name" type="text"
+                        class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
                         placeholder="Name*" />
-                    <input type="email" class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
+                    <input v-model="email" type="email"
+                        class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
                         placeholder="Email ID*" />
-                    <input type="email" class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
+                    <input v-model="phone" type="text"
+                        class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
                         placeholder="Phone No*" />
+
                     <div class="lg:flex justify-between">
                         <div class="lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <select ref="modelRef" name="Model" id="model" class="w-full outline-none">
+                            <select v-model="selectedProduct" class="w-full outline-none">
                                 <option value="typhoon-d2">Typhoon D2</option>
                                 <option value="typhoon-d3">Typhoon D3</option>
                                 <option value="techno-plus-158">TechnoPlus 158</option>
-                                <option value="techno-plus-158-booster">
-                                    TechnoPlus 158 + Booster
-                                </option>
+                                <option value="techno-plus-158-booster">TechnoPlus 158 + Booster</option>
                                 <option value="techno-plus-230">TechnoPlus 230</option>
                                 <option value="techno-plus-258">TechnoPlus 258</option>
                             </select>
@@ -49,42 +51,37 @@
 
                         <div
                             class="mt-12 lg:mt-0 lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <input type="text" placeholder="City" class="w-full outline-none" />
+                            <input v-model="city" type="text" placeholder="City" class="w-full outline-none" />
                         </div>
                     </div>
 
                     <div class="lg:w-full pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                        <select name="model" id="model" class="w-full outline-none">
-                            <option value="size of home">Type of home</option>
-                            <option value="apartment">Aparatment</option>
+                        <select v-model="typeOfHome" class="w-full outline-none">
+                            <option value="apartment">Apartment</option>
                             <option value="independent-house">Independent Home</option>
                         </select>
                         <label for="model">
                             <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
                         </label>
-
                     </div>
-
 
                     <div class="lg:flex justify-between">
                         <div class="lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <select name="model" id="model" class="w-full outline-none">
-                                <option value="size of home">Size of home</option>
-                                <option value="2000-sft"> {{ '< 2000 Sft Built Up Area' }} </option>
-                                <option value="2000-3000-sft"> {{ '2000 - 3000 Sft Built Up Area' }} </option>
-                                <option value="3000-5000-sft"> {{ '3000 - 5000 Sft Built Up Area' }} </option>
-                                <option value="5000-10000-sft"> {{ '5000 - 10000 Sft Built Up Area' }} </option>
-                                <option value="10000-sft"> {{ '> 10000 Sft Built Up Area' }} </option>
+                            <select v-model="sizeOfHome" class="w-full outline-none">
+                                <option value="2000-sft">&lt; 2000 Sft Built Up Area</option>
+                                <option value="2000-3000-sft">2000 - 3000 Sft Built Up Area</option>
+                                <option value="3000-5000-sft">3000 - 5000 Sft Built Up Area</option>
+                                <option value="5000-10000-sft">5000 - 10000 Sft Built Up Area</option>
+                                <option value="10000-sft">&gt; 10000 Sft Built Up Area</option>
                             </select>
                             <label for="model">
                                 <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
                             </label>
-
                         </div>
 
-                        <div class="lg:w-[45%] mt-12 lg:mt-0 pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <select name="model" id="model" class="w-full outline-none">
-                                <option value="size of home">Current Stage</option>
+                        <div
+                            class="lg:w-[45%] mt-12 lg:mt-0 pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
+                            <select v-model="currentStage" class="w-full outline-none">
                                 <option value="under-construction">Under Construction</option>
                                 <option value="interior-under-construction">Interior Under Construction</option>
                                 <option value="fully-constructed">Fully Constructed</option>
@@ -92,12 +89,12 @@
                             <label for="model">
                                 <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
                             </label>
-
                         </div>
                     </div>
+
                     <div class="flex ml-auto w-fit my-2 lg:my-14">
-                        <span class="text-4xl tracking-[0.6rem] opacity-70">Send</span><img
-                            src="@/assets/icons/orange-arrow-right.svg" class="h-10 ml-3" alt="" />
+                        <span @click="submitForm" class="text-4xl tracking-[0.6rem] opacity-70 cursor-pointer">Send</span>
+                        <img src="@/assets/icons/orange-arrow-right.svg" class="h-10 ml-3" alt="" />
                     </div>
                 </div>
             </div>
@@ -106,37 +103,37 @@
 </template>
   
 <script setup>
-const menuState = useState("menuState");
-const selectedProduct = useState("selectedProduct");
-const modelRef = ref(null);
-onMounted(() => {
-    console.log(selectedProduct.value);
-    modelRef.value.value =
-        selectedProduct.value == 0
-            ? "typhoon-d2"
-            : selectedProduct.value == 1
-                ? "typhoon-d3"
-                : selectedProduct.value == 2
-                    ? "techno-plus-158"
-                    : selectedProduct.value == 3
-                        ? "techno-plus-158-booster"
-                        : selectedProduct.value == 4
-                            ? "techno-plus-258"
-                            : selectedProduct.value == 5
-                                ? "techno-plus-230"
-                                : "typhoon-d2";
-    menuState.value = false;
-});
-useHead({
-    title: "Book a Demo",
-});
+import { ref } from "vue";
 
-definePageMeta({
-    scrollToTop: true,
-    pageTransition: {
-        name: "rotate",
-    },
-});
+const name = ref("");
+const email = ref("");
+const phone = ref("");
+const selectedProduct = ref("typhoon-d2");
+const city = ref("");
+const typeOfHome = ref("apartment");
+const sizeOfHome = ref("2000-sft");
+const currentStage = ref("under-construction");
+
+const submitForm = async () => {
+    const formData = {
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        selectedProduct: selectedProduct.value,
+        city: city.value,
+        typeOfHome: typeOfHome.value,
+        sizeOfHome: sizeOfHome.value,
+        currentStage: currentStage.value,
+        clientId: localStorage.getItem('clientId')
+    };
+    try {
+        await postDemo(formData);
+        console.log(formData)
+    } catch (error) {
+        console.log(error.message)
+    }
+
+};
 </script>
   
 <style scoped>
@@ -144,3 +141,4 @@ select {
     appearance: none;
 }
 </style>
+  
