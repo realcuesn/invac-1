@@ -14,11 +14,11 @@
 <script>
 
 useHead({
-  title: 'Invac - Home',
+  title: 'High-Quality Automatic Central Vacuum Cleaners System | INVAC - Your Cleaning Partner',
   meta: [
     {
       name: 'description',
-      content: 'Central vacuum systems clean dust, allergens, viruses, and pollutants invisible to the naked eye.'
+      content: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.'
     }
   ]
 })

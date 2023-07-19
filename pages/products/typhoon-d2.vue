@@ -238,11 +238,11 @@ definePageMeta({
     scrollToTop: true
 })
 useHead({
-    title: 'Invac - Typhoon D2',
+    title: 'INVAC Typhoon D2 | The Most Powerful Central Vacuum Cleaner',
     meta: [
         {
             name: 'description',
-            content: "Most powerful machine in the range. Automatically sucks liquids and drains directly to the sewage. Self-flushing system also provides infinite capacity and simple operation. Water injectors turn dust into sludge."
+            content: "Experience the unmatched power of the INVAC Typhoon D2 central vacuum cleaner. It effortlessly sucks liquids and drains them directly to the sewage, making cleaning a breeze. Discover our high-performance central vacuum products."
         }
     ]
 })

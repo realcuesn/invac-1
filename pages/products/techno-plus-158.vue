@@ -227,11 +227,11 @@ definePageMeta({
     scrollToTop: true
 })
 useHead({
-    title: 'Invac - Techno Plus 158',
+    title: 'INVAC Techno Plus 158 | High-Performance Fully Automatic Central Vacuum Cleaner for Home',
     meta: [
         {
             name: 'description',
-            content: 'Central vacuum systems clean dust, allergens, viruses, and pollutants invisible to the naked eye.'
+            content: 'Experience the power and efficiency of the INVAC Techno Plus 158 central vacuum cleaner. With its advanced features and superior suction, it delivers exceptional cleaning performance. Explore our range of central vacuum products.'
         }
     ]
 })
