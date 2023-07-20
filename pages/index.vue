@@ -14,7 +14,7 @@
 <script>
 
 useHead({
-  title: 'High-Quality Automatic Central Vacuum Cleaners System | INVAC - Your Cleaning Partner',
+  title: 'INVAC - World’s leading wet and dry Central Vacuum Cleaner System | INVAC - Your Cleaning Partner',
   meta: [
     {
       name: 'description',
