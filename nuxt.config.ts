@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Invac",
+      title: "High-Quality Automatic Central Vacuum Cleaners System | INVAC - Your Cleaning Partner",
       htmlAttrs: {
         lang: "en",
       },
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Central vacuum systems clean dust, allergens, viruses, and pollutants invisible to the naked eye.",
+            "Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.",
         },
       ],
     },
