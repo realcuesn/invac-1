@@ -1,6 +1,6 @@
 <template>
     <div class="w-full mt-20">
-        <h2 class="text-lg lg:text-2xl 2xl:text-3xl font-light">Would you like us to send more details abount the product
+        <h2 class="text-lg lg:text-2xl 2xl:text-3xl font-light">Would you like us to send more details about the product
             <span class="font-semibold lg:block">via email & phone?*</span>
         </h2>
 

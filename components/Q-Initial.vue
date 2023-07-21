@@ -3,21 +3,24 @@
 
         <div class="flex flex-col lg:w-[55%]">
             <div
-                class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl justify-between text-neutral-500 border-b-2 border-neutral-500">
-                <select v-model="typeState" @click="triggerHoseSelect" required name="Model" id="model"
-                    class="w-full outline-none bg-transparent">
+                class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl justify-between relative text-neutral-500 border-b-2 border-neutral-500">
+                <select v-model="typeState" @click="triggerHoseSelect" required name="t-home" id="t-home"
+                    class="w-full outline-none bg-transparent absolute">
                     <option value="default-state">Type of Home</option>
-                    <option value="apartment">Aparatment</option>
+                    <option value="apartment">Apartment</option>
                     <option value="independent-house">Independent Home</option>
                 </select>
-                <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+
+                <label for="t-home" class="block ml-auto">
+                    <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+                </label>
             </div>
 
             <div class="lg:flex mt-7 lg:mt-16 justify-between gap-x-16">
                 <div
-                    class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
-                    <select v-model="sizeState" @click="triggerSize" required name="Model" id="model"
-                        class="w-full outline-none bg-transparent">
+                    class="pb-2 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between relative text-neutral-500 border-b-2 w-full border-neutral-500">
+                    <select v-model="sizeState" @click="triggerSize" required name="h-size" id="h-size"
+                        class="w-full outline-none bg-transparent absolute">
                         <option value="default-state">Size of Home</option>
                         <option value="2000-sft"> {{ '< 2000 Sft Built Up Area' }} </option>
                         <option value="2000-3000-sft"> {{ '2000 - 3000 Sft Built Up Area' }} </option>
@@ -26,31 +29,40 @@
                         <option value="10000-sft"> {{ '> 10000 Sft Built Up Area' }} </option>
 
                     </select>
-                    <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+
+                    <label for="h-size" class="block ml-auto">
+                        <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+                    </label>
                 </div>
                 <div
-                    class="pb-2 2xl:pb-5 flex mt-7 text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 w-full border-neutral-500">
-                    <select v-model="currentType" @click="triggerCurrentStage" required name="Model" id="model"
-                        class="w-full outline-none bg-transparent">
+                    class="pb-2 2xl:pb-5 flex mt-7 text-lg lg:text-2xl 2xl:text-3xl items-center justify-between relative text-neutral-500 border-b-2 w-full border-neutral-500">
+                    <select v-model="currentType" @click="triggerCurrentStage" required name="stage" id="stage"
+                        class="w-full outline-none bg-transparent absolute">
                         <option value="default-state">Current Stage</option>
                         <option value="under-construction">Under Construction</option>
                         <option value="interior-under-construction">Interior Under Construction</option>
                         <option value="fully-constructed">Fully Constructed</option>
 
                     </select>
-                    <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+                    <label for="stage" class="block ml-auto">
+                        <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+                    </label>
                 </div>
             </div>
 
             <div
-                class="pb-2 mt-7 lg:mt-16 flex text-lg lg:text-2xl 2xl:text-3xl items-center justify-between text-neutral-500 border-b-2 border-neutral-500">
-                <select v-model="maintenanceType" @click="triggerMaintenanceSelect" required name="Model" id="model"
-                    placeholder="Maintiance" class="w-full outline-none bg-transparent">
-                    <option value="default-state">Maintenace</option>
-                    <option value="manual">Manual</option>
-                    <option value="fully-auto">Fully Auto</option>
-                </select>
-                <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8" alt="" />
+                class="pb-2 mt-7 lg:mt-16 flex text-lg lg:text-2xl 2xl:text-3xl items-center relative justify-between text-neutral-500 border-b-2 border-neutral-500">
+                <div @click="triggerMaintenanceSelect" class="absolute w-full">
+                    <select v-model="maintenanceType" required name="h-maintenance" id="h-maintenance"
+                        placeholder="Maintenance" class="w-full outline-none bg-transparent">
+                        <option value="default-state">Maintenance</option>
+                        <option value="manual">Manual</option>
+                        <option value="fully-auto">Fully Auto</option>
+                    </select>
+                </div>
+                <label for="h-maintenance" class="block ml-auto">
+                    <img src="@/assets/icons/chevron-down.svg" class="h-8 w-8 cursor-pointer" alt="" />
+                </label>
             </div>
 
 
@@ -95,6 +107,10 @@ const triggerSubmit = () => {
     quizState.value = 2
 
 }
+
+const toggleSizeDropdown = () => {
+    triggerSizeSelect.value = !triggerSizeSelect.value;
+};
 
 const triggerMaintenanceSelect = () => {
     triggerMaintenanceSelectState.value = false
