@@ -197,14 +197,15 @@
                         <img src="@/assets/icons/twin-motor.svg" class="w-[4.5rem] " alt="">
                     </div>
 
-                    <div class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
+                    <NuxtLink to="/demo"
+                        class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
                         <h2 class="text-xs font-semibold">₹4,98,305 – ₹7,90,244</h2>
 
                         <button class="flex items-center gap-x-3">
                             <h3 class="text-[0.65rem]">Get A quote</h3>
                             <img src="@/assets/icons/orange-arrow-right.svg" class="h-5" alt="">
                         </button>
-                    </div>
+                    </NuxtLink>
 
                     <div class="mt-4 text-xs">
                         *This pricing is only for the Product. Installation and piping are
