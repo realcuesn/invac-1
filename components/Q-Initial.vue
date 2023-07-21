@@ -96,6 +96,23 @@ const maintenanceType = ref('default-state');
 
 
 const triggerSubmit = () => {
+
+    if (maintenanceType.value == 'default-state') {
+        return null;
+    }
+
+    if (currentType.value == 'default-state') {
+        return null;
+    }
+
+    if (sizeState.value == 'default-state') {
+        return null;
+    }
+
+    if (typeState.value == 'default-state') {
+        return null;
+    }
+
     const quizOptions = {
         typeState: typeState.value,
         sizeState: sizeState.value,
