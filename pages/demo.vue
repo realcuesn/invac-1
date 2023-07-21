@@ -93,7 +93,6 @@ import { ref } from "vue";
 const name = ref("");
 const email = ref("");
 const phone = ref("");
-const selectedProduct = ref("typhoon-d2");
 const city = ref("");
 const typeOfHome = ref("apartment");
 const sizeOfHome = ref("2000-sft");
@@ -104,7 +103,6 @@ const submitForm = async () => {
         name: name.value,
         email: email.value,
         phone: phone.value,
-        selectedProduct: selectedProduct.value,
         city: city.value,
         typeOfHome: typeOfHome.value,
         sizeOfHome: sizeOfHome.value,
