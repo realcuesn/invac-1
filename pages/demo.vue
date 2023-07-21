@@ -36,24 +36,9 @@
                         class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
                         placeholder="Phone No*" />
 
-                    <div class="lg:flex justify-between">
-                        <div class="lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <select v-model="selectedProduct" class="w-full outline-none">
-                                <option value="typhoon-d2">Typhoon D2</option>
-                                <option value="typhoon-d3">Typhoon D3</option>
-                                <option value="techno-plus-158">TechnoPlus 158</option>
-                                <option value="techno-plus-158-booster">TechnoPlus 158 + Booster</option>
-                                <option value="techno-plus-230">TechnoPlus 230</option>
-                                <option value="techno-plus-258">TechnoPlus 258</option>
-                            </select>
-                            <img src="@/assets/icons/chevron-down.svg" class="h-10 w-10" alt="" />
-                        </div>
-
-                        <div
-                            class="mt-12 lg:mt-0 lg:w-[45%] pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
-                            <input v-model="city" type="text" placeholder="City" class="w-full outline-none" />
-                        </div>
-                    </div>
+                    <input v-model="city" type="text"
+                        class="w-full outline-none text-lg lg:text-2xl border-neutral-600 border-b-2 pb-3"
+                        placeholder="City" />
 
                     <div class="lg:w-full pb-3 flex text-lg lg:text-2xl justify-between border-b-2 border-black">
                         <select v-model="typeOfHome" class="w-full outline-none">
