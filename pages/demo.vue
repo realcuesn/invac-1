@@ -97,7 +97,7 @@ const city = ref("");
 const typeOfHome = ref("apartment");
 const sizeOfHome = ref("2000-sft");
 const currentStage = ref("under-construction");
-
+const router = useRouter()
 const submitForm = async () => {
     const formData = {
         name: name.value,
@@ -112,6 +112,7 @@ const submitForm = async () => {
     try {
         await postDemo(formData);
         console.log(formData)
+        router.go()
     } catch (error) {
         console.log(error.message)
     }
