@@ -208,7 +208,7 @@
                     </div>
 
                     <div class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
-                        <h2 class="text-xs font-semibold">₹2,10,000 - ₹22,2,0000</h2>
+                        <h2 class="text-xs font-semibold">₹2,10,000 - ₹22,20,000</h2>
 
                         <button class="flex items-center gap-x-3">
                             <h3 class="text-[0.65rem]">Get A quote</h3>
