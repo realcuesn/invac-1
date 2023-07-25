@@ -98,6 +98,7 @@ const typeOfHome = ref("apartment");
 const sizeOfHome = ref("2000-sft");
 const currentStage = ref("under-construction");
 const router = useRouter()
+const date  = new Date()
 const submitForm = async () => {
     const formData = {
         name: name.value,
@@ -107,7 +108,8 @@ const submitForm = async () => {
         typeOfHome: typeOfHome.value,
         sizeOfHome: sizeOfHome.value,
         currentStage: currentStage.value,
-        clientId: localStorage.getItem('clientId')
+        clientId: localStorage.getItem('clientId'),
+        currentDate: date
     };
     try {
         await postDemo(formData);
