@@ -114,7 +114,7 @@ const submitForm = async () => {
     try {
         await postDemo(formData);
         console.log(formData)
-        router.go()
+     /*    router.go() */
     } catch (error) {
         console.log(error.message)
     }
