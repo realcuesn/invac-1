@@ -89,6 +89,8 @@
   
 <script setup>
 import { ref } from "vue";
+import { addDoc, collection } from "firebase/firestore";
+const { $firestore, $storage } = await useNuxtApp()
 
 const name = ref("");
 const email = ref("");
@@ -98,7 +100,7 @@ const typeOfHome = ref("apartment");
 const sizeOfHome = ref("2000-sft");
 const currentStage = ref("under-construction");
 const router = useRouter()
-const date  = new Date()
+const date = new Date()
 const submitForm = async () => {
     const formData = {
         name: name.value,
@@ -113,8 +115,11 @@ const submitForm = async () => {
     };
     try {
         await postDemo(formData);
+        const docRef = await addDoc(collection($firestore, "users"), formData);
         console.log(formData)
-     /*    router.go() */
+        console.log("Document written with ID: ", docRef.id);
+        router.go()
+
     } catch (error) {
         console.log(error.message)
     }
