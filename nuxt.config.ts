@@ -25,12 +25,16 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/robots",
     "@vite-pwa/nuxt",
+    'nuxt-simple-sitemap'
   ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  site: {
+    url: 'https://invac.in',
   },
 
   devtools: true,
