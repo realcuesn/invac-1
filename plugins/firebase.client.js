@@ -13,6 +13,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     storageBucket: "invac-5b3e2.appspot.com",
     messagingSenderId: "132681643170",
     appId: "1:132681643170:web:32c7b42ea32617ab2193fb",
+    measurementId: "G-MK1PQC7XYH"
   };
 
   const app = initializeApp(firebaseConfig);
@@ -20,6 +21,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   const auth = getAuth(app);
   const firestore = getFirestore(app);
   const storage = getStorage(app);
+  const analytics = getAnalytics(app);
 
   nuxtApp.vueApp.provide("auth", auth);
   nuxtApp.provide("auth", auth);
@@ -29,4 +31,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   nuxtApp.vueApp.provide("storage", storage);
   nuxtApp.provide("storage", storage);
+
+  nuxtApp.vueApp.provide("analytics", analytics);
+  nuxtApp.provide("analytics", analytics);
 });
