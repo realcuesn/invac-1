@@ -37,7 +37,7 @@ window.addEventListener("unload", function (event) {
     })
     .catch((error) => {
       // Error occurred during the tracking request
-      console.error("Error during tracking:", error);
+      console.log("Error during tracking:", error);
     });
 
   // Synchronous request using Axios
@@ -47,7 +47,7 @@ window.addEventListener("unload", function (event) {
       const url = "https://api.sqordbot.com/api/post-trackinginfo";
       return axios.post(url, data);
     } catch (error) {
-      console.error("Error occurred while making the POST request:", error);
+      console.log("Error occurred while making the POST request:", error);
       throw error;
     }
   }
@@ -113,12 +113,13 @@ onMounted(async () => {
         }
         throw new Error('Failed to fetch geolocation data');
       } catch (error) {
-        console.error('Error fetching geolocation:', error);
+        console.log('Error fetching geolocation:', error);
       }
       return null;
     }
 
     // Get the existing sessions from local storage or initialize an empty array
+    //@ts-ignore
     let sessions: SessionData[] = JSON.parse(localStorage.getItem('sessions')) || [];
 
     // Generate a new session ID using crypto.randomUUID()
@@ -145,7 +146,7 @@ onMounted(async () => {
         }
       })
       .catch(error => {
-        console.error('Error fetching geolocation:', error);
+        console.log('Error fetching geolocation:', error);
         // Provide default values for geolocation
         newSession.ipAddress = 'Unknown';
         newSession.location = 'Unknown';

@@ -6,6 +6,8 @@
     <H-Fourth />
     <H-Five></H-Five>
     <H-Sixth />
+    <H-Seventh></H-Seventh>
+    <H-Eight></H-Eight>
     <A-Footer />
   </div>
 </template>
