@@ -74,17 +74,6 @@
                     <div class="text-neutral-600 font-semibold text-lg mt-5">View More</div>
                 </NuxtLink>
 
-
-                <NuxtLink to="/blogs/blog/4DDBdXgimurIP5IGWsV3" class="w-[85%] min-w-[85%]">
-                    <div class="w-full h-64 rounded-md bg-neutral-800">
-                        <NuxtImg format="webp" class="h-full w-full rounded-md object-cover"
-                            src="/images/blog/Tips to Make Home Cleaning Effortless.jpg">
-                        </NuxtImg>
-                    </div>
-                    <h3 class="mt-7 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <div class="text-neutral-600 font-semibold text-lg mt-5">View More</div>
-                </NuxtLink>
-
             </div>
         </div>
 
