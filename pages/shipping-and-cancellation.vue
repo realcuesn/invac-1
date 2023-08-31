@@ -16,7 +16,7 @@
             <div class="py-20 w-full text-black font-semibold bg-white mt-40 px-10 lg:px-20 text-base">
                 <h2>Shipping Policy</h2>
                 <p class="font-medium">
-                    We usually ship the product within 7 working days after reciving the
+                    We usually ship the product within 7 working days after receiving the
                     order and try and de-liver them within 15 working days.
                 </p>
 

@@ -13,16 +13,24 @@
 </template>
 
 
-<script>
+<script setup>
 
 useHead({
-  title: 'INVAC - World’s leading wet and dry Central Vacuum Cleaner System | INVAC - Your Cleaning Partner',
+  title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
   meta: [
-    {
-      name: 'description',
-      content: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.'
-    }
-  ]
+    { name: 'description', content: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.' }
+  ],
+  bodyAttrs: {
+    class: 'test'
+  },
+  script: [{ innerHTML: 'console.log(\'Hello world\')' }]
+})
+
+useSeoMeta({
+  title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
+  ogTitle: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
+  description: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.',
+  ogDescription: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.',
 })
 
 definePageMeta({

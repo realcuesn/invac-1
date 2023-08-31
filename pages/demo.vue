@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full">
+    <div class="w-full relative">
         <div class="w-full lg:h-screen lg:flex">
             <div class="lg:w-[50%] lg:min-w-[50%] lg:h-full px-10 pb-20 lg:pb-0 lg:px-20 pt-20 text-white">
                 <NuxtLink to="/">
@@ -84,6 +84,17 @@
                 </div>
             </div>
         </div>
+
+        <div v-if="submittedState"
+            class="h-screen w-full font-semibold flex flex-col gap-y-6 justify-center items-center text-center fixed top-0 z-50 px-10 bg-white">
+            <h3>
+                <img src="@/assets/icons/logo-white.svg" class="h-7 lg:h-7 xl:h-8 2xl:h-9 animate-bounce duration-500"
+                    alt="">
+            </h3>
+            <h3 class=" text-lg lg:text-xl text-black">
+                Our team will be in touch with you shortly.
+            </h3>
+        </div>
     </div>
 </template>
   
@@ -91,7 +102,22 @@
 import { ref } from "vue";
 import { addDoc, collection } from "firebase/firestore";
 const { $firestore, $storage } = await useNuxtApp()
+useHead({
+    title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
+    meta: [
+        {
+            name: 'description',
+            content: `Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.`
+        }
+    ]
+})
 
+const forHomeState = ref(false)
+
+definePageMeta({
+    scrollToTop: true,
+    pageTransition: false,
+});
 const name = ref("");
 const email = ref("");
 const phone = ref("");
@@ -100,6 +126,7 @@ const typeOfHome = ref("apartment");
 const sizeOfHome = ref("2000-sft");
 const currentStage = ref("under-construction");
 const router = useRouter()
+const submittedState = ref(false)
 const date = new Date()
 const submitForm = async () => {
     const formData = {
@@ -118,7 +145,12 @@ const submitForm = async () => {
         const docRef = await addDoc(collection($firestore, "users"), formData);
         console.log(formData)
         console.log("Document written with ID: ", docRef.id);
-        router.go()
+
+        submittedState.value = true
+        setTimeout(() => {
+            submittedState.value = false
+            router.push('/')
+        }, 2000);
 
     } catch (error) {
         console.log(error.message)

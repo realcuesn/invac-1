@@ -6,17 +6,13 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "High-Quality Automatic Central Vacuum Cleaners System | INVAC - Your Cleaning Partner",
+      title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
+      meta: [
+        { name: 'description', content: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.' }
+      ],
       htmlAttrs: {
         lang: "en",
       },
-      meta: [
-        {
-          name: "description",
-          content:
-            "Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.",
-        },
-      ],
     },
   },
   css: ["~/assets/css/main.css", "~/assets/fonts/stylesheet.css"],

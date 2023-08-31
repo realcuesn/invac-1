@@ -64,7 +64,7 @@
                         class="h-full w-full absolute top-0 flex transition-all bg-neutral-600 opacity-0 hover:opacity-100 duration-1000 flex-col justify-end p-10 pr-16 rounded-md">
                         <h2 class="text-white lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Coming Soon
                         </h2>
-                      <!--   <div class="w-full flex items-center text-xs mt-3">
+                        <!--   <div class="w-full flex items-center text-xs mt-3">
                             <div class="w-[55%]">Explore a comprehensive selection of high-performing vacuum cleaners
                                 designed for industrial use in various settings.
                             </div>
@@ -89,7 +89,8 @@
                     <div class="flex items-center justify-between">
                         <div class="w-[70%]">
 
-                            <div class="text-[0.65rem] sm:text-lg mt-0.5">Discover a comprehensive list of the best vacuum cleaners for
+                            <div class="text-[0.65rem] sm:text-lg mt-0.5">Discover a comprehensive list of the best vacuum
+                                cleaners for
                                 your home.</div>
 
 
@@ -122,11 +123,11 @@
 
 <script setup>
 useHead({
-    title: 'Shop Category',
+    title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
     meta: [
         {
             name: 'description',
-            content: 'Choose from our wide range of product categories'
+            content: `Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.`
         }
     ]
 })
