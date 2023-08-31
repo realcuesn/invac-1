@@ -238,11 +238,11 @@ definePageMeta({
     scrollToTop: true
 })
 useHead({
-    title: 'INVAC Typhoon D3 | Bagless Central Vacuum with Cyclonic Action',
+    title: `INVAC Typhoon D3 | Bagless Central Vacuum with Cyclonic Action`,
     meta: [
         {
             name: 'description',
-            content: "Upgrade to the INVAC Typhoon D3, a bagless central vacuum system with cyclonic action for superior cleaning performance. Say goodbye to bags and simplify your cleaning routine. Explore our central vacuum products today."
+            content: `Upgrade to the INVAC Typhoon D3, a bagless central vacuum system with cyclonic action for superior cleaning performance. Say goodbye to bags and simplify your cleaning routine. Explore our central vacuum products today.`
         }
     ]
 })

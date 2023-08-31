@@ -197,7 +197,8 @@
                         <img src="@/assets/icons/quiet-function.svg" class="w-[4.5rem] " alt="">
                     </div>
 
-                    <NuxtLink to="/demo" class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
+                    <NuxtLink to="/demo"
+                        class="w-full border-2 flex items-center justify-between border-black mt-10 py-10 rounded-lg px-3">
                         <h2 class="text-xs font-semibold">₹4,98,305 – ₹7,90,244</h2>
 
                         <button class="flex items-center gap-x-3">
@@ -227,11 +228,11 @@ definePageMeta({
     scrollToTop: true
 })
 useHead({
-    title: 'INVAC Techno Plus 158 | High-Performance Fully Automatic Central Vacuum Cleaner for Home',
+    title: `INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home`,
     meta: [
         {
             name: 'description',
-            content: 'Experience the power and efficiency of the INVAC Techno Plus 158 central vacuum cleaner. With its advanced features and superior suction, it delivers exceptional cleaning performance. Explore our range of central vacuum products.'
+            content: `Experience the power and efficiency of the INVAC Techno Plus 158 central vacuum cleaner. With its advanced features and superior suction, it delivers exceptional cleaning performance. Explore our range of central vacuum products.`
         }
     ]
 })
