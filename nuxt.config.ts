@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
     prerender: {
-      routes: ['/', '/demo', '/accessories', 'shop-category']
+      routes: ['/', '/demo', '/accessories', '/shop-category', '/products/techno-plus-158', '/products/typhoon-d2', '/products/typhoon-d3']
     },
   },
   app: {
