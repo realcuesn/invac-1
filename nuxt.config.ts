@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     compressPublicAssets: true,
+    prerender: {
+      routes: ['/', '/demo', '/accessories', 'shop-category']
+    },
   },
   app: {
     head: {
