@@ -86,8 +86,14 @@
 const menuState = useState("menuState");
 
 useHead({
-    title: "Terms of Service",
-});
+    title: 'Terms of Service',
+    meta: [
+        {
+            name: 'description',
+            content: "Read the Terms of Service for InVac, a leading vacuum company, to understand the terms and conditions of using our products and services."
+        }
+    ]
+})
 
 definePageMeta({
     scrollToTop: true,

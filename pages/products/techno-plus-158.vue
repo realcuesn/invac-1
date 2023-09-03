@@ -224,19 +224,21 @@
 <script setup>
 const menuState = useState("menu");
 const descriptionState = ref(false);
-definePageMeta({
+useHead({
     title: 'INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home',
-});
+    meta: [
+        {
+            name: 'description',
+            content: "Experience the power and efficiency of the INVAC Techno Plus 158 central vacuum cleaner. With its advanced features and superior suction, it delivers exceptional cleaning performance. Explore our range of central vacuum products."
+        }
+    ]
+})
 const description = ref('Ultimate machine in the range for small & Medium Homes. Automatically sucks liquids and drains directly to the sewage. Self-flushing system also provides infinite capacity and simple operation. Water injectors turn dust into sludge.')
 const triggerMenu = () => {
     menuState.value = true;
 };
 
 
-useServerSeoMeta({
-    title: `INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home`,
-    description: `Ultimate machine in the range for small & Medium Homes. Automatically sucks liquids and drains directly to the sewage. Self-flushing system also provides infinite capacity and simple operation. Water injectors turn dust into sludge.`
-})
 
 </script>
 
