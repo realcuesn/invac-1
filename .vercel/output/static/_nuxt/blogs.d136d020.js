@@ -1,1 +1,0 @@
-import{c as e,b as t,o as c,n}from"./entry.84e2e4bd.js";import{_ as s}from"./_plugin-vue_export-helper.c27b6911.js";const _={},r={class:"w-full"};function a(f,l){const o=n;return c(),e("div",r,[t(o)])}const d=s(_,[["render",a]]);export{d as default};

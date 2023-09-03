@@ -15,6 +15,10 @@ useHead({
     ]
 })
 
+useSeoMeta({
+    title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
+})
+
 const forHomeState = ref(false)
 
 definePageMeta({

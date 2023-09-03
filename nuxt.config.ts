@@ -1,25 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
-  nitro: {
-    compressPublicAssets: true,
-    preset: 'vercel-edge',
-
-  },
-/*   app: {
-    head: {
-      htmlAttrs: {
-        lang: "en",
-      },
-    },
-  }, */
+  ssr: true,
   css: ["~/assets/css/main.css", "~/assets/fonts/stylesheet.css"],
+  build: {
+    transpile: ['gsap']
+  },
   modules: [
     "@vueuse/nuxt",
     "@nuxt/image-edge",
     "@nuxtjs/robots",
-    "@vite-pwa/nuxt",
-    'nuxt-simple-sitemap'
+    'nuxt-simple-sitemap',
   ],
   postcss: {
     plugins: {
@@ -29,6 +19,9 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://invac.in',
+  },
+  image: {
+    provider: "ipx"
   },
 
   devtools: true,

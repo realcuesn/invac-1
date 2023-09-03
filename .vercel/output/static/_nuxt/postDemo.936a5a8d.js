@@ -1,1 +1,0 @@
-import{P as a}from"./entry.84e2e4bd.js";const e=async t=>{try{const r=await a({method:"post",url:"https://api.sqordbot.com/api/post-vacdemo",data:t});return console.log(r.data),r.data}catch(o){throw console.error("Error occurred while making the POST request:",o),o}};export{e as p};
