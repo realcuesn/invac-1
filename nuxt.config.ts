@@ -3,17 +3,16 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     compressPublicAssets: true,
-    prerender: {
-      routes: ['/products/techno-plus-158'],
-    }
+    preset: 'vercel-edge',
+
   },
-  app: {
+/*   app: {
     head: {
       htmlAttrs: {
         lang: "en",
       },
     },
-  },
+  }, */
   css: ["~/assets/css/main.css", "~/assets/fonts/stylesheet.css"],
   modules: [
     "@vueuse/nuxt",
