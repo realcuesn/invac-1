@@ -1,18 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   nitro: {
     compressPublicAssets: true,
-    prerender: {
-      routes: ['/', '/demo', '/accessories', '/shop-category', '/products/techno-plus-158', '/products/typhoon-d2', '/products/typhoon-d3']
-    },
   },
   app: {
     head: {
-      title: `World's Leading Wet and Dry Auto flush Central Vacuum Cleaner | INVAC - Your Cleaning Partner`,
-      meta: [
-        { name: 'description', content: 'Upgrade to a reliable home central vacuum system from INVAC. Discover our selection of affordable vacuum cleaners and experience the convenience of an automatic central vacuum system.' }
-      ],
       htmlAttrs: {
         lang: "en",
       },
