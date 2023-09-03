@@ -1,8 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   nitro: {
     compressPublicAssets: true,
+    prerender: {
+      routes: ['/products/techno-plus-158'],
+    }
   },
   app: {
     head: {

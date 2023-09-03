@@ -17,13 +17,11 @@ import 'vue3-lottie/dist/style.css'
 const menuState = useState('menu', () => false)
 const citiesState = useState("citiesState", () => false);
 const quizState = useState("quizState", () => 1);
-
+gsap.registerPlugin(ScrollTrigger);
 const route = useRoute()
 
 
-onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
-})
+
 
 window.addEventListener("unload", function (event) {
   // Perform your actions here synchronously using Axios

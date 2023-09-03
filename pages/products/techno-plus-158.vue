@@ -225,8 +225,19 @@
 const menuState = useState("menu");
 const descriptionState = ref(false);
 definePageMeta({
-    scrollToTop: true
+    scrollToTop: true,
+    title: 'INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home',
 })
+
+
+useSeoMeta({
+    title: 'INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home',
+    ogTitle: 'INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home',
+    description: 'Experience the power and efficiency of the INVAC Techno Plus 158 central vacuum cleaner. With its advanced features and superior suction, it delivers exceptional cleaning performance. Explore our range of central vacuum products.',
+    ogDescription: 'Experience the power and efficiency of the INVAC Techno Plus 158 central vacuum cleaner. With its advanced features and superior suction, it delivers exceptional cleaning performance. Explore our range of central vacuum products.'
+})
+
+
 useHead({
     title: `INVAC Techno Plus 158 | Best in Class High-Performance Fully Automatic Central Vacuum Cleaner for Home`,
     meta: [
