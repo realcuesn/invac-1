@@ -20,9 +20,6 @@ export default defineNuxtConfig({
   site: {
     url: 'https://invac.in',
   },
-  image: {
-    provider: "ipx"
-  },
 
   devtools: true,
 });
