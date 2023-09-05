@@ -16,7 +16,12 @@
                 <label class="block mb-2 font-bold text-2xl mt-20" for="blog-url">Blog URL -</label>
                 <input required v-model="blogUrl"
                     class="bg-white bg-opacity-90 text-black p-5 rounded-lg my-10 mb-8 w-full h-12 appearance-none"
-                    type="url" id="blog-url" name="blog-url" />
+                    type="text" id="blog-url" name="blog-url" />
+
+                <label class="block mb-2 font-bold text-2xl mt-20" for="meta-description">Meta Tag Description -</label>
+                <textarea v-model="metaDescription" name="meta-description" id="meta-description" cols="30" rows="3"
+                    class="w-full text-black p-5 outline-none bg-white bg-opacity-90 rounded-md"></textarea>
+
 
                 <label class="block mb-2 font-bold text-2xl mt-20" for="blog-title">Blog Title -</label>
                 <input required v-model="blogTitle"
@@ -32,9 +37,7 @@
                     </div>
                 </div>
 
-                <label class="block mb-2 font-bold text-2xl mt-20" for="meta-description">Meta Tag Description -</label>
-                <textarea v-model="metaDescription" name="meta-description" id="meta-description" cols="30" rows="3"
-                    class="w-full text-black p-5 outline-none bg-white bg-opacity-90 rounded-md"></textarea>
+
 
                 <label class="block mb-2 font-bold text-2xl mt-20" for="blog-content">Blog Content -</label>
                 <textarea v-model="blogText" name="blog-content" id="blog-content" cols="30" rows="10"
