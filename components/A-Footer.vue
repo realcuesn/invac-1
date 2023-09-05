@@ -88,11 +88,37 @@
                     <a class="footer-anim-pop-wide translate-y-[100%]" href="mailto:sales@invac.in">sales@invac.in</a>
                     <a class="footer-anim-pop-wide translate-y-[100%]" href="tel:+91 8798 779 778">+91 9248009941</a>
                 </div>
+
+                <div>
+                    <h2 class="font-semibold text-xl mt-24 text-[#f16012]">Popular Searches</h2>
+                    <div class="w-full text-sm lg:text-sm mt-10">
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Benefits of using a
+                            central vacuum system</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">How central vacuum
+                            systems work best central vacuum brand in India</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Upgrading your home
+                            with a central vacuum system</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Wet and Dry Central
+                            Vacuum Systems vs. Portable Vacuum Cleaners</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Central vacuum system
+                            cost and budget considerations</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Choosing the right
+                            accessories for your central vacuum</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">The Complete Central
+                            Vacuum System Installation Guide: Handling Wet and Dry Waste Options</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Best Central Vacuum
+                            Brands or top central vacuum system</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Allergy and Asthma
+                            Symptoms</NuxtLink> |
+                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Best Healthy Cleaning
+                            Products for Your Home</NuxtLink>
+                    </div>
+                </div>
             </div>
 
             <div class="w-full h-0.5 bg-neutral-400 mt-10 lg:hidden"></div>
 
-            <div class="lg:pl-[20%] mt-10 lg:mt-0">
+            <div class="lg:pl-[20%] mt-10 lg:mt-0 lg:h-full lg:flex lg:flex-col lg:flex-grow lg:justify-between">
                 <div class="text-2xl font-semibold overflow-y-clip">
                     <div class="footer-anim-pop-wide translate-y-[100%]">
                         Be Part of Invac Family
@@ -110,10 +136,13 @@
 
                 </div>
                 </p>
-                <input type="text" placeholder="Your Name"
-                    class="bg-transparent mt-12 text-xl lg:text-2xl border-b border-white pb-3 w-full outline-none">
-                <input type="text" placeholder="Email Address"
-                    class="bg-transparent mt-10 text-xl lg:text-2xl border-b border-white pb-3 w-full outline-none">
+                <div>
+                    <input type="text" placeholder="Your Name"
+                        class="bg-transparent mt-12 text-xl lg:text-2xl border-b border-white pb-3 w-full outline-none">
+                    <input type="text" placeholder="Email Address"
+                        class="bg-transparent mt-10 text-xl lg:text-2xl border-b border-white pb-3 w-full outline-none">
+                </div>
+
 
                 <div class="text-lg font-semibold  overflow-y-clip flex gap-x-4 mt-8"> <span
                         class="border-b translate-y-[100%] footer-anim-pop-wide"> Subscribe</span> <img
