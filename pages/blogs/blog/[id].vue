@@ -48,10 +48,21 @@ const { $firestore, $storage } = await useNuxtApp();
 const route = useRoute();
 const blogArray = ref([]);
 const blogTitle = ref("");
+const metaDescription = ref("")
 const imageSrc = ref(null);
 const isLoaded = ref(false);
+
+useHead({
+    title: blogTitle.value,
+    meta: [
+        {
+            name: 'description',
+            content: metaDescription.value
+        }
+    ]
+})
 onMounted(async () => {
-    const docId = route.path.split("/")[3];
+    const docId = route.query.id;
     const docRef = doc($firestore, "invac-blogs", docId);
     const docSnap = await getDoc(docRef);
 
@@ -65,6 +76,7 @@ onMounted(async () => {
         imageSrc.value = imageURL;
         blogTitle.value = data.title;
         blogArray.value = data.content;
+        metaDescription.value = data.metaDescription
         isLoaded.value = true;
     } else {
         // docSnap.data() will be undefined in this case

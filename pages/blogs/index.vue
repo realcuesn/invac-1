@@ -6,7 +6,7 @@
 
             <div v-if="isLoaded"
                 class="flex flex-wrap justify-evenly xl:grid xl:grid-cols-3 2xl:grid-cols-4 mt-20 gap-x-10 gap-y-10">
-                <NuxtLink v-for="item in sortedCollectionArray" :to="`/blogs/blog/${item.id}`"
+                <NuxtLink v-for="item in sortedCollectionArray" :to="`/blogs/blog/${item.url}?id=${item.id}`"
                     class="w-full sm:w-80 transition-all block mr-auto duration-700 hover:opacity-75 active:opacity-80 cursor-pointer">
                     <div class="h-96 w-full">
                         <img :src="item.imageURL" class="object-cover h-full rounded-lg w-full" alt="" />

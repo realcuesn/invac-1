@@ -13,6 +13,10 @@
                 <img ref="imgPreview" id="preview-image"
                     class="mb-8  w-full lg:w-[70%] block mx-auto rounded-md border-2 border-neutral-500 aspect-video object-cover" />
 
+                <label class="block mb-2 font-bold text-2xl mt-20" for="blog-url">Blog URL -</label>
+                <input required v-model="blogUrl"
+                    class="bg-white bg-opacity-90 text-black p-5 rounded-lg my-10 mb-8 w-full h-12 appearance-none"
+                    type="url" id="blog-url" name="blog-url" />
 
                 <label class="block mb-2 font-bold text-2xl mt-20" for="blog-title">Blog Title -</label>
                 <input required v-model="blogTitle"
@@ -27,8 +31,13 @@
                         </p>
                     </div>
                 </div>
+
+                <label class="block mb-2 font-bold text-2xl mt-20" for="meta-description">Meta Tag Description -</label>
+                <textarea v-model="metaDescription" name="meta-description" id="meta-description" cols="30" rows="3"
+                    class="w-full text-black p-5 outline-none bg-white bg-opacity-90 rounded-md"></textarea>
+
                 <label class="block mb-2 font-bold text-2xl mt-20" for="blog-content">Blog Content -</label>
-                <textarea  v-model="blogText" name="blog-content" id="blog-content" cols="30" rows="10"
+                <textarea v-model="blogText" name="blog-content" id="blog-content" cols="30" rows="10"
                     class="w-full text-black p-5 outline-none bg-white bg-opacity-90 rounded-md min-h-[22rem]"></textarea>
                 <div class="flex gap-x-3">
                     <div @click="triggerAddParagraph"
@@ -62,6 +71,8 @@ const blogText = ref(null)
 const blogArray = ref([])
 const blogTitle = ref(null)
 const imgPreview = ref(null);
+const blogUrl = ref(null);
+const metaDescription = ref(null);
 const triggerImageChange = async () => {
     console.log(imgFile.value.value)
     const file = imgFile.value.files[0]
@@ -88,8 +99,9 @@ const submitForm = async () => {
         content: blogArray.value,
         title: blogTitle.value,
         imgFileName: imgFile.value.files[0].name,
+        url: blogUrl.value, // Capture the blog URL
+        metaDescription: metaDescription.value, // Capture the meta tag description
         currentDate: date
-
     };
 
     try {
