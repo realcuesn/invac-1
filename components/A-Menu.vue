@@ -187,6 +187,16 @@ onMounted(() => {
         delay: 2,
     });
 });
+
+onBeforeUnmount(() => {
+    try {
+        document.querySelector("body")?.classList.remove("no-scroll");
+    } catch (error) {
+        //@ts-ignore
+        console.log(error.message)
+    }
+
+})
 </script>
 
 <style scoped></style>
