@@ -92,26 +92,12 @@
                 <div>
                     <h2 class="font-semibold text-xl mt-24 text-[#f16012]">Popular Searches</h2>
                     <div class="w-full text-sm lg:text-sm mt-10">
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Benefits of using a
-                            central vacuum system</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">How central vacuum
-                            systems work best central vacuum brand in India</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Upgrading your home
-                            with a central vacuum system</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Wet and Dry Central
-                            Vacuum Systems vs. Portable Vacuum Cleaners</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Central vacuum system
-                            cost and budget considerations</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Choosing the right
-                            accessories for your central vacuum</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">The Complete Central
-                            Vacuum System Installation Guide: Handling Wet and Dry Waste Options</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Best Central Vacuum
-                            Brands or top central vacuum system</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Allergy and Asthma
-                            Symptoms</NuxtLink> |
-                        <NuxtLink to="/" class="hover:text-[#f16012] transition-colors duration-700">Best Healthy Cleaning
-                            Products for Your Home</NuxtLink>
+                        <div v-for="item in sortedCollectionArray" class="inline">
+                            <NuxtLink :to="`/blogs/blog/${item.url}?id=${item.id}`"
+                                class="hover:text-[#f16012] cursor-pointer transition-colors duration-700"> {{ item.title }}
+                            </NuxtLink> |
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -180,11 +166,25 @@
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup >
 import gsap from 'gsap';
+import { collection, getDocs } from "firebase/firestore";
+import { ref as storageRef, getDownloadURL } from "firebase/storage";
+
+const { $firestore, $storage } = await useNuxtApp();
+const collectionArray = ref([]);
+
+const sortedCollectionArray = computed(() => {
+    console.log(
+        "sortedCollectionArray computed property called",
+        collectionArray.value
+    );
+    //@ts-ignore
+    return collectionArray.value.sort((a, b) => a.title.localeCompare(b.title));
+});
 //TODO change out collection images to white images no more blm
 const citiesState = useState("citiesState");
-onMounted(() => {
+onMounted(async () => {
     gsap.to('.footer-anim-pop-wide', {
         scrollTrigger: {
             trigger: ".footer-anim-pop-wide"
@@ -202,5 +202,31 @@ onMounted(() => {
         duration: 2.5,
 
     })
+
+
+    //@ts-ignore
+    const colRef = collection($firestore, "invac-blogs");
+
+    try {
+        console.log(colRef);
+    } catch (error) {
+        // Handle error
+    }
+
+    const snapshot = await getDocs(colRef);
+    snapshot.docs.forEach(async (doc) => {
+        const data = await doc.data();
+
+        const imageURL = await getDownloadURL(
+            //@ts-ignore
+            storageRef($storage, data.imgFileName)
+        );
+        //@ts-ignore
+        collectionArray.value.push({ ...data, imageURL, id: doc.id });
+    });
+
+    // Sort the collectionArray by title in alphabetical order 
+    //@ts-ignore
+    collectionArray.value.sort((a, b) => a.title.localeCompare(b.title));
 })
 </script>
