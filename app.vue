@@ -1,12 +1,10 @@
 <template>
-  <!--   <div class=" w-screen bg-[#1A1A1A] text-white">
+    <div class=" w-screen bg-[#1A1A1A] text-white">
     <NuxtPage />
     <A-Menu v-if="menuState" />
     <A-Cities v-if="citiesState"> </A-Cities>
-  </div> -->
-  <div class="h-screen w-screen flex items-center justify-center">
-    <h2>404</h2>
   </div>
+ 
 </template>
 
 <script setup lang="ts">
