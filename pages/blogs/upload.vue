@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full">
+    <div v-if="isLoggedIn" class="w-full">
         <A-Nav></A-Nav>
         <div class="w-full min-h-screen">
             <form @submit.prevent="submitForm" class="px-10 2xl:px-20 py-10 lg:py-10 xl:py-12 2xl:py-14  min-h-screen">
@@ -62,6 +62,16 @@
         </div>
         <AFooter></AFooter>
     </div>
+
+    <div v-else class="grid place-content-center min-h-screen">
+        <h1 class="text-3xl font-semibold">You are not logged in</h1>
+        <input type="text" placeholder="username" v-model="username"
+            class="bg-white bg-opacity-90 text-black p-5 rounded-lg my-10 mb-8 w-full h-12 appearance-none" />
+        <input type="password" placeholder="password" v-model="password"
+            class="bg-white bg-opacity-90 text-black p-5 rounded-lg my-10 mb-8 w-full h-12 appearance-none" />
+        <button @click="login"
+            class="bg-emerald-500 mt-20 rounded-md px-6 py-3 transition-all duration-700 text-sm text-white font-bold hover:bg-neutral-500 active:bg-neutral-800">Login</button>
+    </div>
 </template>
 
 <script setup>
@@ -69,6 +79,9 @@ import { addDoc, collection } from "firebase/firestore";
 import { ref as storageRef, uploadBytes } from 'firebase/storage'
 const { $firestore, $storage } = await useNuxtApp()
 
+
+
+const isLoggedIn = ref(false)
 const imgFile = ref(null)
 const blogText = ref(null)
 const blogArray = ref([])
@@ -76,6 +89,22 @@ const blogTitle = ref(null)
 const imgPreview = ref(null);
 const blogUrl = ref(null);
 const metaDescription = ref(null);
+const username = ref(null)
+const password = ref(null)
+const uname = 'admin'
+const pword = 'aDd@123'
+
+const login = async () => {
+    try {
+        if (username.value !== uname || password.value !== pword) {
+            throw new Error('Invalid Credentials')
+        }
+        isLoggedIn.value = true
+    } catch (error) {
+        console.log(error.message)
+    }
+}
+
 const triggerImageChange = async () => {
     console.log(imgFile.value.value)
     const file = imgFile.value.files[0]
